@@ -1,0 +1,539 @@
+/* ==========================================================================
+   LASH & BROW STUDIO — RESPONSIVE STYLESHEET
+   Tested & optimized for:
+   320px, 360px, 375px, 390px, 414px, 480px, 576px, 768px, 820px,
+   1024px, 1152px, 1280px, 1366px, 1440px, 1600px, 1920px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Ultra-Wide & Desktop (1440px to 1920px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .container, .container-lg, .container-xl, .container-xxl {
+    max-width: 1360px;
+  }
+
+  .hero-luxury-title {
+    font-size: 4.2rem;
+  }
+
+  .section-padding {
+    padding: 7.5rem 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Standard Desktop & Laptop (1200px to 1439px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+  .navbar-luxury .nav-link {
+    padding: 0.4rem 0.45rem !important;
+    font-size: 0.78rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Compact Desktop (992px to 1199.98px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .brand-main {
+    font-size: 1.4rem;
+  }
+
+  .brand-sub {
+    font-size: 0.55rem;
+    letter-spacing: 0.22em;
+  }
+
+  .navbar-luxury .nav-link {
+    padding: 0.45rem 0.55rem !important;
+    font-size: 0.84rem;
+  }
+
+  .btn-nav-control {
+    font-size: 0.72rem;
+    padding: 0.28rem 0.5rem;
+  }
+
+  .navbar-nav-cta .btn-luxury {
+    padding: 0.48rem 0.9rem;
+    font-size: 0.74rem;
+  }
+
+  .cta-banner-luxury {
+    padding: 3.5rem 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Collapsed Navigation (up to 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  /* Navigation Drawer in Mobile/Tablet */
+  .navbar-collapse {
+    background-color: var(--color-bg-card);
+    padding: 1.4rem 1.25rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+    margin-top: 0.85rem;
+    border: 1px solid var(--color-border);
+    max-height: 82vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Nav links inside drawer */
+  .navbar-nav-center {
+    position: static !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-bottom: 0.75rem !important;
+    gap: 0 !important;
+  }
+
+  .navbar-luxury .nav-link {
+    padding: 0.75rem 0.5rem !important;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--color-border-subtle);
+    display: block;
+    width: 100%;
+  }
+
+  .navbar-luxury .nav-link:last-of-type {
+    border-bottom: none;
+  }
+
+  .navbar-luxury .nav-link::after {
+    display: none; /* In vertical drawer, underline indicator is replaced by active text color */
+  }
+
+  .navbar-luxury .nav-link.active {
+    color: var(--color-gold-text);
+    font-weight: 700;
+  }
+
+  /* Actions inside mobile drawer */
+  .navbar-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+    padding-top: 1.15rem;
+    border-top: 1px solid var(--color-border);
+    margin-left: 0 !important;
+  }
+
+  .nav-controls-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .theme-toggle-group {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-nav-symbol {
+    flex: 1;
+    height: 36px;
+    font-size: 1.05rem;
+  }
+
+  .dir-toggle-group {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-nav-dir {
+    flex: 1;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  /* CTA inside mobile drawer */
+  .navbar-nav-cta {
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .navbar-nav-cta .btn-luxury {
+    width: 100%;
+    height: auto;
+    min-height: 44px;
+    padding: 0.85rem 1.25rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* Hero Section Stack */
+  .hero-two-column {
+    text-align: center;
+  }
+
+  .hero-two-column .hero-content-wrap {
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-two-column .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-two-column .divider-gold {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-img-wrap {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .hero-floating-badge {
+    bottom: 16px;
+    left: 16px;
+  }
+
+  [dir="rtl"] .hero-floating-badge {
+    left: auto;
+    right: 16px;
+  }
+
+  /* About Collage on Mobile */
+  .about-collage-grid {
+    max-width: 520px;
+    margin: 1.5rem auto 0 auto;
+  }
+
+  /* Section Spacing */
+  .section-padding {
+    padding: 4.5rem 0;
+  }
+
+  /* Footer adjustments */
+  .footer-luxury {
+    padding-top: 4rem;
+  }
+
+  .footer-col-spacing {
+    margin-bottom: 2.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Small Tablets & Large Phones (576px to 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* About Stats Responsive */
+  .about-stats-grid {
+    gap: 1rem;
+  }
+
+  .about-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .about-stat-label {
+    font-size: 0.76rem;
+  }
+
+  /* Pricing Items: stack price and meta cleanly */
+  .pricing-item-row {
+    flex-direction: column;
+    gap: 0.85rem;
+    align-items: flex-start;
+  }
+
+  [dir="rtl"] .pricing-item-row {
+    align-items: flex-start;
+  }
+
+  .pricing-item-meta {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-top: 0.5rem;
+    border-top: 1px dashed var(--color-border);
+  }
+
+  [dir="rtl"] .pricing-item-meta {
+    text-align: right;
+  }
+
+  /* Before-After Cards */
+  .ba-pair-container {
+    grid-template-columns: 1fr;
+  }
+
+  .ba-item {
+    aspect-ratio: 16 / 10;
+  }
+
+  .ba-item:first-child {
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  /* CTA Banner */
+  .cta-banner-luxury {
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .cta-banner-luxury .btn-luxury {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Service Card Footer */
+  .service-card-footer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .service-card-footer .btn-luxury {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Mobile Phones (320px to 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  /* Fluid Typography for small screens */
+  h1 {
+    font-size: 2.15rem;
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  h3 {
+    font-size: 1.35rem;
+  }
+
+  .lead-luxury {
+    font-size: 1rem;
+  }
+
+  .btn-luxury {
+    padding: 0.75rem 1.4rem;
+    font-size: 0.82rem;
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* About Collage & Stats Mobile */
+  .about-collage-grid {
+    gap: 0.75rem;
+  }
+
+  .about-collage-right {
+    margin-top: 1.25rem;
+  }
+
+  .about-tag {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  [dir="rtl"] .about-tag {
+    left: auto;
+    right: 10px;
+  }
+
+  .about-stats-grid {
+    gap: 0.75rem;
+  }
+
+  .about-stat-item {
+    padding-left: 0.65rem;
+  }
+
+  [dir="rtl"] .about-stat-item {
+    padding-right: 0.65rem;
+    padding-left: 0;
+  }
+
+  .about-stat-value {
+    font-size: 1.35rem;
+  }
+
+  .about-stat-label {
+    font-size: 0.7rem;
+  }
+
+  /* Lash Service Cards on Mobile */
+  .lash-service-card {
+    padding: 1.25rem;
+  }
+
+  .lash-service-img-wrap {
+    min-height: 180px;
+    aspect-ratio: 16 / 10;
+    margin-bottom: 0.75rem;
+  }
+
+  .lash-service-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .lash-service-actions .btn-luxury {
+    width: 100%;
+  }
+
+  .hero-actions .btn-luxury {
+    width: 100%;
+  }
+
+  .brand-logo-wrap {
+    width: 38px;
+    height: 38px;
+    padding: 3px;
+  }
+
+  .brand-main {
+    font-size: 1.35rem;
+  }
+
+  .brand-sub {
+    font-size: 0.52rem;
+  }
+
+  .section-padding {
+    padding: 3.5rem 0;
+  }
+
+  .section-padding-sm {
+    padding: 2.5rem 0;
+  }
+
+  /* Form controls touch targets */
+  .form-luxury .form-control,
+  .form-luxury .form-select {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    min-height: 46px;
+  }
+
+  .form-luxury .form-check-input {
+    min-width: 18px;
+    min-height: 18px;
+  }
+
+  /* Step Card adjustments */
+  .step-card {
+    padding: 1.8rem 1.2rem;
+  }
+
+  .step-number {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+
+  /* Testimonial Card */
+  .testimonial-card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  /* Accordion Button */
+  .accordion-luxury .accordion-button {
+    font-size: 1.1rem;
+    padding: 1.1rem 1.25rem;
+  }
+
+  .accordion-luxury .accordion-body {
+    padding: 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  /* Back to Top Floating Button */
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  [dir="rtl"] .back-to-top {
+    left: 20px;
+  }
+
+  /* Lightbox Modal */
+  .modal-luxury .modal-header {
+    padding: 1rem;
+  }
+
+  .modal-luxury .modal-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-lightbox-caption {
+    padding: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Extra Narrow Mobile (320px to 360px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 360px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .brand-logo-wrap {
+    width: 34px;
+    height: 34px;
+    padding: 2.5px;
+  }
+
+  .brand-main {
+    font-size: 1.25rem;
+  }
+
+  .hero-luxury-title {
+    font-size: 1.95rem;
+  }
+
+  .btn-luxury {
+    padding: 0.7rem 1.1rem;
+    letter-spacing: 0.08em;
+  }
+
+  .btn-nav-control {
+    font-size: 0.74rem;
+    padding: 0.45rem 0.5rem;
+  }
+}

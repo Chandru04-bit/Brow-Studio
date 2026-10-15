@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <defs>
+    <!-- Rich Metallic Gold Gradient -->
+    <linearGradient id="goldGrad" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#F2DFAB"/>
+      <stop offset="25%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#AA7C1E"/>
+      <stop offset="75%" stop-color="#E5C578"/>
+      <stop offset="100%" stop-color="#996D14"/>
+    </linearGradient>
+
+    <!-- Subtle Shimmer Stroke -->
+    <linearGradient id="goldStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7C4"/>
+      <stop offset="50%" stop-color="#C59B27"/>
+      <stop offset="100%" stop-color="#7A530B"/>
+    </linearGradient>
+
+    <!-- Lash Flourish Gradient -->
+    <linearGradient id="lashGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C59B27"/>
+      <stop offset="60%" stop-color="#F2DFAB"/>
+      <stop offset="100%" stop-color="#E5C578"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Fine Decorative Circle -->
+  <circle cx="50" cy="50" r="46" stroke="url(#goldStroke)" stroke-width="1.8"/>
+
+  <!-- Inner Delicate Concentric Ring -->
+  <circle cx="50" cy="50" r="41.5" stroke="url(#goldGrad)" stroke-width="0.8" opacity="0.85"/>
+
+  <!-- Four Ornamental Compass Dots -->
+  <circle cx="50" cy="5" r="1.5" fill="url(#goldGrad)"/>
+  <circle cx="50" cy="95" r="1.5" fill="url(#goldGrad)"/>
+  <circle cx="5" cy="50" r="1.5" fill="url(#goldGrad)"/>
+  <circle cx="95" cy="50" r="1.5" fill="url(#goldGrad)"/>
+
+  <!-- Sculpted Luxury Serif Monogram 'L' -->
+  <path d="
+    M 34 25.5 
+    C 34 24.5 35 24 37 24 
+    L 47.5 24 
+    C 49.5 24 50.5 24.5 50.5 25.5 
+    C 50.5 26.5 49.5 27 47.5 27 
+    L 44.5 27 
+    L 44.5 66.5 
+    L 59 66.5 
+    C 62.5 66.5 64.5 65.5 65.5 63 
+    C 66 61.5 66.5 59.5 67 58 
+    C 67.5 57 68.5 57 69 57.5 
+    C 69.5 58 69.5 59 69.2 61 
+    L 67.5 72 
+    L 34.5 72 
+    C 33 72 32.5 71.5 32.5 70.5 
+    C 32.5 69.5 33 69 34.5 69 
+    L 37.5 69 
+    L 37.5 27 
+    L 34 27 
+    C 32.5 27 32 26.5 32 25.5 
+    Z" 
+    fill="url(#goldGrad)"/>
+
+  <!-- Elegant Upward Sweeping Eyelash Curve Flourish -->
+  <path d="
+    M 44.5 67 
+    C 52 64 63 56 69.5 44 
+    C 74 36 76 27.5 77 22 
+    C 75.5 27 71 36.5 64.5 44 
+    C 58 51.5 49.5 58.5 44.5 61 
+    Z" 
+    fill="url(#lashGrad)"/>
+
+  <!-- Secondary Featherweight Lash Spike Accent -->
+  <path d="
+    M 55 60 
+    C 63 53 71 43.5 74 33 
+    C 73 37 68 46.5 60.5 53 
+    Z" 
+    fill="url(#lashGrad)" opacity="0.75"/>
+
+  <!-- Delicate Brilliant Sparkle Star -->
+  <path d="
+    M 78 19 
+    L 79.2 22.8 
+    L 83 24 
+    L 79.2 25.2 
+    L 78 29 
+    L 76.8 25.2 
+    L 73 24 
+    L 76.8 22.8 
+    Z" 
+    fill="url(#goldGrad)"/>
+
+  <!-- Small Ambient Sparkle Dot -->
+  <circle cx="27" cy="35" r="1.2" fill="url(#goldGrad)" opacity="0.8"/>
+</svg>

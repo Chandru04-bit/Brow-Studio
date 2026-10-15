@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the story, master artists, and philosophy behind Lash &amp; Brow Studio. Experience medical-grade hygiene, bespoke lash mapping, and damage-free artistry in Beverly Hills.">
+  <meta name="keywords" content="about lash studio, eyelash extension artist, brow specialist, luxury lash salon beverly hills, lash damage-free guarantee">
+  <meta name="author" content="Lash &amp; Brow Studio">
+  <meta name="theme-color" content="#FFF9F5">
+
+  <title>About Our Studio &amp; Artists — Lash &amp; Brow Studio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-l.svg">
+
+  <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans-serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Instant Theme & Direction Restoration (Zero Flash) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('studio-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      const savedDir = localStorage.getItem('studio-direction') || 'ltr';
+      document.documentElement.setAttribute('dir', savedDir);
+      document.documentElement.dir = savedDir;
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       SHARED NAVIGATION BAR
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-luxury fixed-top" aria-label="Main Navigation">
+      <div class="container navbar-container">
+        <!-- Logo on Left -->
+        <a class="navbar-brand navbar-brand-luxury" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+          <span class="brand-logo-wrap">
+            <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="40" height="40">
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-main">Lash &amp; Brow Studio</span>
+            <span class="brand-sub">Luxury Aesthetic Artistry</span>
+          </span>
+        </a>
+
+        <!-- Hamburger Toggler Button (Mobile & Tablet) -->
+        <button class="navbar-toggler" type="button" id="navbarLuxuryToggler" data-bs-toggle="collapse" data-bs-target="#navbarLuxuryCollapse" aria-controls="navbarLuxuryCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right Controls: Theme Symbols, Direction Buttons & CTA -->
+          <div class="navbar-actions d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2">
+            <div class="nav-controls-row">
+              <!-- Theme Selection Symbol Buttons -->
+              <div class="nav-control-group theme-toggle-group" role="group" aria-label="Theme Selection">
+                <button type="button" class="btn-nav-symbol active" id="themeLightBtn" data-theme-val="light" aria-label="Light Mode" title="Light Mode" aria-pressed="true">
+                  <i class="bi bi-sun-fill"></i>
+                </button>
+                <button type="button" class="btn-nav-symbol" id="themeDarkBtn" data-theme-val="dark" aria-label="Dark Mode" title="Dark Mode" aria-pressed="false">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+              </div>
+
+              <!-- Direction Selection Text Buttons -->
+              <div class="nav-control-group dir-toggle-group" role="group" aria-label="Layout Direction">
+                <button type="button" class="btn-nav-dir active" id="dirLtrBtn" data-dir-val="ltr" aria-label="Left to Right Direction" aria-pressed="true">
+                  LTR
+                </button>
+                <button type="button" class="btn-nav-dir" id="dirRtlBtn" data-dir-val="rtl" aria-label="Right to Left Direction" aria-pressed="false">
+                  RTL
+                </button>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="navbar-nav-cta">
+              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary btn-luxury-sm text-nowrap">
+                <i class="bi bi-calendar2-heart me-1"></i> Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ========================================================================
+         PAGE HERO BANNER & BREADCRUMB
+         ======================================================================== -->
+    <section class="section-padding bg-ivory pt-5 mt-5 border-bottom" aria-labelledby="aboutHeroHeading">
+      <div class="container pt-4">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-9 col-xl-8">
+            <nav aria-label="Breadcrumb" class="mb-3">
+              <ol class="breadcrumb justify-content-center small text-muted-custom mb-2">
+                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted-custom">Home</a></li>
+                <li class="breadcrumb-item active text-gold fw-semibold" aria-current="page">About Our Studio</li>
+              </ol>
+            </nav>
+            <span class="eyebrow"><i class="bi bi-heart me-1 text-gold"></i> THE STUDIO STORY</span>
+            <h1 id="aboutHeroHeading" class="section-title mb-3">The Art of Bespoke Beauty</h1>
+            <div class="divider-gold mx-auto"></div>
+            <p class="section-subtitle mt-3">
+              Founded on the belief that eyelash extensions and brow architecture should elevate natural individuality without ever compromising biological health.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         STUDIO PHILOSOPHY & COLLAGE SECTION
+         ======================================================================== -->
+    <section class="section-padding bg-card-theme" aria-labelledby="philosophyHeading">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Text Column -->
+          <div class="col-lg-6">
+            <span class="eyebrow"><i class="bi bi-flower1 me-1 text-gold"></i> OUR PHILOSOPHY</span>
+            <h2 id="philosophyHeading" class="section-title mb-3">Where Clinical Precision Meets Couture Elegance</h2>
+            <div class="divider-gold"></div>
+            <p class="lead-luxury mb-4">
+              At Lash &amp; Brow Studio, we believe your eyes are your most expressive signature. Rather than applying uniform templates, our approach is artisanal, consultative, and anatomically calibrated.
+            </p>
+            <p class="text-muted-custom mb-4">
+              Every appointment begins with an in-depth eye shape analysis, follicle density evaluation, and lifestyle consultation. Whether creating subtle everyday classic lashes or featherweight Russian volume bouquets, we adhere strictly to the golden rule of lash health: one extension per natural lash, never exceeding safe weight or length parameters.
+            </p>
+
+            <!-- Stats Grid -->
+            <div class="about-stats-grid mb-4">
+              <div class="about-stat-item">
+                <span class="about-stat-value">8+</span>
+                <span class="about-stat-label">Years of Master Artistry</span>
+              </div>
+              <div class="about-stat-item">
+                <span class="about-stat-value">10k+</span>
+                <span class="about-stat-label">Sets Customized</span>
+              </div>
+              <div class="about-stat-item">
+                <span class="about-stat-value">100%</span>
+                <span class="about-stat-label">Damage-Free Guarantee</span>
+              </div>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                Book a Private Consultation <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="gallery.html" class="btn-luxury btn-luxury-secondary">
+                View Client Portfolio
+              </a>
+            </div>
+          </div>
+
+          <!-- Collage Images Column -->
+          <div class="col-lg-6">
+            <div class="about-collage-grid">
+              <div class="about-collage-item">
+                <div class="about-card-img">
+                  <img src="assets/images/about/about-studio.jpg" alt="Luxury lash studio suite interior with ergonomic bed and ring light" loading="lazy">
+                </div>
+                <div class="about-tag">
+                  <i class="bi bi-geo-alt me-1 text-gold"></i> Private Sanctuary Suite
+                </div>
+              </div>
+              <div class="about-collage-item about-collage-right">
+                <div class="about-card-img">
+                  <img src="assets/images/services/lash-isolation-action.jpg" alt="Master lash stylist performing precision single lash isolation" loading="lazy">
+                </div>
+                <div class="about-tag">
+                  <i class="bi bi-stars me-1 text-gold"></i> Precision Isolation Craft
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FOUNDER & MASTER ARTIST SPOTLIGHT
+         ======================================================================== -->
+    <section class="section-padding bg-ivory border-top border-bottom" aria-labelledby="artistSpotlightHeading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow"><i class="bi bi-award me-1 text-gold"></i> MEET THE FOUNDER</span>
+          <h2 id="artistSpotlightHeading" class="section-title">The Master Behind the Craft</h2>
+          <div class="divider-gold mx-auto"></div>
+          <p class="section-subtitle mt-3">
+            Trained across Tokyo, London, and Beverly Hills, bringing international mastery and medical-grade standards to every set.
+          </p>
+        </div>
+
+        <div class="artist-spotlight-card">
+          <div class="row align-items-center g-5">
+            <!-- Artist Portrait -->
+            <div class="col-lg-5">
+              <div class="artist-portrait-wrap">
+                <img src="assets/images/about/about-artist.jpg" alt="Sarah Vance - Founder and Master Lash Artist">
+                <div class="artist-experience-badge">
+                  <span class="badge-number">8+</span>
+                  <span class="badge-text">Years Master Certified</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artist Biography & Credentials -->
+            <div class="col-lg-7">
+              <span class="badge badge-gold mb-2">Founder &amp; Master Educator</span>
+              <h3 class="display-6 font-serif fw-bold mb-2">Sarah Vance</h3>
+              <p class="text-gold fw-semibold mb-4">Board-Certified Aesthetician &bull; International Lash Master</p>
+              
+              <blockquote class="border-start border-3 border-warning ps-3 my-3 fst-italic text-muted-custom">
+                &ldquo;True beauty is effortless. When extensions are placed with microscopic precision and customized weight, you wake up looking luminous without feeling a single gram of weight on your eyes.&rdquo;
+              </blockquote>
+
+              <p class="text-muted-custom mb-3">
+                Sarah established Lash &amp; Brow Studio following years of working backstage at international fashion weeks and luxury European aesthetic clinics. Frustrated by commercial salons applying heavy, damaging pre-made clusters, she formulated our signature Damage-Free Isolation Technique.
+              </p>
+              <p class="text-muted-custom mb-4">
+                Today, Sarah personally trains every artist in our studio through a rigorous 200-hour mentorship program covering ocular health, hypoallergenic chemistry, and facial architecture mapping.
+              </p>
+
+              <!-- Credentials Pills -->
+              <div class="d-flex flex-wrap gap-2 pt-2">
+                <span class="credential-pill"><i class="bi bi-patch-check-fill"></i> State Board Licensed</span>
+                <span class="credential-pill"><i class="bi bi-award-fill"></i> Master Russian Volume Certified</span>
+                <span class="credential-pill"><i class="bi bi-shield-check"></i> OSHA &amp; CDC Sanitation Certified</span>
+                <span class="credential-pill"><i class="bi bi-trophy-fill"></i> Top Lash Studio Beverly Hills 2024–2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         FOUR CORE STUDIO STANDARDS
+         ======================================================================== -->
+    <section class="section-padding bg-card-theme" aria-labelledby="standardsHeading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow"><i class="bi bi-shield-check me-1 text-gold"></i> UNCOMPROMISING EXCELLENCE</span>
+          <h2 id="standardsHeading" class="section-title">The Four Studio Standards</h2>
+          <div class="divider-gold mx-auto"></div>
+          <p class="section-subtitle mt-3">
+            What makes our studio the preferred sanctuary for discerning clients, brides, and beauty professionals.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Standard 1 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="standard-card">
+              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+                <img src="assets/images/about/hospital-grade-sanitation.jpg" alt="Hospital-Grade Medical Autoclave Sterilization" class="w-100 h-100 object-fit-cover" loading="lazy">
+              </div>
+              <div class="standard-icon">
+                <i class="bi bi-shield-plus"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Hospital-Grade Sterilization</h3>
+              <p class="text-muted-custom small mb-0">
+                Medical autoclave sterilization for precision tweezers, medical-grade disinfectant barriers, and single-use disposable micro-brushes for every guest.
+              </p>
+            </div>
+          </div>
+
+          <!-- Standard 2 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="standard-card">
+              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+                <img src="assets/images/pricing/bundle-radiance.jpg" alt="Featherweight Japanese Silk Lash Fibers" class="w-100 h-100 object-fit-cover" loading="lazy">
+              </div>
+              <div class="standard-icon">
+                <i class="bi bi-feather"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Featherweight Japanese Silk</h3>
+              <p class="text-muted-custom small mb-0">
+                Ultra-lightweight faux-mink and Japanese silk fibers that feel completely weightless, mimic real human lash flexibility, and never pull your follicles.
+              </p>
+            </div>
+          </div>
+
+          <!-- Standard 3 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="standard-card">
+              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+                <img src="assets/images/services/lash-mapping-process.jpg" alt="Facial Geometry &amp; Eye Symmetry Mapping" class="w-100 h-100 object-fit-cover" loading="lazy">
+              </div>
+              <div class="standard-icon">
+                <i class="bi bi-compass"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Facial Geometry Mapping</h3>
+              <p class="text-muted-custom small mb-0">
+                No cookie-cutter lashes. We evaluate your eye symmetry, brow bone projection, and eyelid crease to design a custom map that complements your features.
+              </p>
+            </div>
+          </div>
+
+          <!-- Standard 4 -->
+          <div class="col-lg-3 col-md-6">
+            <div class="standard-card">
+              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+                <img src="assets/images/about/about-studio.jpg" alt="Ergonomic Cloud Treatment Suites" class="w-100 h-100 object-fit-cover" loading="lazy">
+              </div>
+              <div class="standard-icon">
+                <i class="bi bi-cloud-sun"></i>
+              </div>
+              <h3 class="h5 fw-bold mb-2">Ergonomic Cloud Suites</h3>
+              <p class="text-muted-custom small mb-0">
+                Relax on temperature-controlled memory-foam treatment beds with cervical contour pillows, noise-softening acoustic suites, and ambient calm.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CLIENT EXPERIENCES & REVIEWS
+         ======================================================================== -->
+    <section class="section-padding bg-ivory border-top border-bottom" aria-labelledby="testimonialsHeading">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="eyebrow"><i class="bi bi-chat-heart me-1 text-gold"></i> PRAISE &amp; ACCLAIM</span>
+          <h2 id="testimonialsHeading" class="section-title">Words From Our Cherished Guests</h2>
+          <div class="divider-gold mx-auto"></div>
+          <p class="section-subtitle mt-3">
+            Read authentic reviews from clients who trust Lash &amp; Brow Studio with their eyes year after year.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Review 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                &ldquo;Elena and her team are true artists. I have worn lash extensions for six years, and nowhere else has matched the weightlessness and zero-damage retention of Lash &amp; Brow Studio. My natural lashes are actually thicker now!&rdquo;
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client-1.jpg" alt="Sophia Laurent portrait" class="testimonial-avatar">
+                <div>
+                  <h4 class="testimonial-name">Sophia Laurent</h4>
+                  <span class="testimonial-treatment">Couture Hybrid Set</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                &ldquo;The Keratin Lash Lift and Brow Lamination combo is an absolute game-changer. I leave the studio looking like I spent an hour doing my makeup, yet it requires zero morning effort. The suite is serene, quiet, and spotless.&rdquo;
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client-2.jpg" alt="Camille Dupont portrait" class="testimonial-avatar">
+                <div>
+                  <h4 class="testimonial-name">Camille Dupont</h4>
+                  <span class="testimonial-treatment">Lash Lift &amp; Brow Lamination</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="testimonial-card">
+              <div class="testimonial-quote-icon"><i class="bi bi-quote"></i></div>
+              <div class="star-rating">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                &ldquo;I have sensitive eyes and experienced allergic reactions at other salons. Here, they used their hypoallergenic medical glue and performed a patch test first. Not a hint of redness, and the lashes lasted over 4 weeks effortlessly.&rdquo;
+              </p>
+              <div class="testimonial-author">
+                <img src="assets/images/testimonials/client-3.jpg" alt="Harper Davis portrait" class="testimonial-avatar">
+                <div>
+                  <h4 class="testimonial-name">Harper Davis</h4>
+                  <span class="testimonial-treatment">Russian Volume Full Set</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         CTA PROMOTIONAL BANNER
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="ctaAboutHeading">
+      <div class="container">
+        <div class="cta-banner-luxury text-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+              <span class="badge badge-gold mb-3 text-uppercase">Experience Bespoke Luxury</span>
+              <h2 id="ctaAboutHeading" class="display-6 font-serif fw-bold text-white mb-3">Ready to Elevate Your Everyday Look?</h2>
+              <p class="text-white-50 lead mb-4">
+                Join our family of discerning clients. Reserve your private suite appointment with our master lash and brow artists today.
+              </p>
+              <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                  <i class="bi bi-calendar2-heart me-1"></i> Book Your Appointment
+                </a>
+                <a href="services.html" class="btn-luxury btn-luxury-outline-white">
+                  Explore Full Services Menu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       SHARED FOOTER
+       ======================================================================== -->
+  <footer class="footer-luxury" aria-label="Studio Footer">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-col-spacing">
+          <a class="navbar-brand-luxury footer-brand-link mb-3" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+            <span class="brand-logo-wrap">
+              <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="44" height="44">
+            </span>
+            <span class="brand-text-wrap">
+              <span class="brand-main">Lash &amp; Brow Studio</span>
+              <span class="brand-sub">Luxury Aesthetic Artistry</span>
+            </span>
+          </a>
+          <p class="footer-text mb-4">
+            An exclusive sanctuary in Beverly Hills dedicated to bespoke eyelash extensions, keratin lash lifts, and sculpted brow architecture. Committed to damage-free artistry and uncompromising hygiene.
+          </p>
+          <div class="footer-social-links d-flex gap-2" aria-label="Social media links">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow us on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow us on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow us on TikTok">
+              <i class="bi bi-tiktok"></i>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Follow us on Pinterest">
+              <i class="bi bi-pinterest"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small"></i> Pricing Menu</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Lookbook Gallery</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Studio</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Signature Services -->
+        <div class="col-lg-3 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Treatments</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#classicLashes"><i class="bi bi-chevron-right small"></i> Classic Lashes</a></li>
+            <li><a href="services.html#hybridLashes"><i class="bi bi-chevron-right small"></i> Hybrid Extensions</a></li>
+            <li><a href="services.html#volumeLashes"><i class="bi bi-chevron-right small"></i> Volume &amp; Mega Sets</a></li>
+            <li><a href="services.html#lashLift"><i class="bi bi-chevron-right small"></i> Keratin Lash Lift</a></li>
+            <li><a href="services.html#browTreatments"><i class="bi bi-chevron-right small"></i> Brow Lamination</a></li>
+            <li><a href="pricing.html#refills"><i class="bi bi-chevron-right small"></i> Lash Refills &amp; Baths</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Details -->
+        <div class="col-lg-3 col-md-6 footer-col-spacing">
+          <h3 class="footer-heading">Studio Visit</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Lash &amp; Brow Studio</strong><br>
+              450 Luxury Promenade, Suite 200<br>
+              Beverly Hills, CA 90210
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <a href="mailto:hello@lashbrowstudio.com" class="text-white text-decoration-none">hello@lashbrowstudio.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              Tue – Sat: 9:00 AM – 7:00 PM<br>
+              Sunday: 10:00 AM – 4:00 PM<br>
+              Monday: Closed
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-center text-md-start">
+          &copy; 2026 Lash &amp; Brow Studio. All rights reserved. Crafted for beauty connoisseurs.
+        </p>
+        <div class="text-muted-custom small">
+          <span>Hygienic</span> &bull; <span>Cruelty-Free</span> &bull; <span>Bespoke Artistry</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top floating button -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

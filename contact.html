@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book your eyelash extension or brow lamination appointment at Lash & Brow Studio. Request online or contact our beauty concierge.">
+  <title>Contact & Appointment Booking | Lash & Brow Studio — Beverly Hills</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-l.svg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Immediate Theme & Direction Initialization (Prevents Flash) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('studio-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      const savedDir = localStorage.getItem('studio-direction') || 'ltr';
+      document.documentElement.setAttribute('dir', savedDir);
+      document.documentElement.dir = savedDir;
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       SHARED NAVIGATION BAR
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-luxury fixed-top" aria-label="Main Navigation">
+      <div class="container navbar-container">
+        <!-- Logo on Left -->
+        <a class="navbar-brand navbar-brand-luxury" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+          <span class="brand-logo-wrap">
+            <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="40" height="40">
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-main">Lash &amp; Brow Studio</span>
+            <span class="brand-sub">Luxury Aesthetic Artistry</span>
+          </span>
+        </a>
+
+        <!-- Hamburger Toggler Button (Mobile & Tablet) -->
+        <button class="navbar-toggler" type="button" id="navbarLuxuryToggler" data-bs-toggle="collapse" data-bs-target="#navbarLuxuryCollapse" aria-controls="navbarLuxuryCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right Controls: Theme Symbols, Direction Buttons & CTA -->
+          <div class="navbar-actions d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2">
+            <div class="nav-controls-row">
+              <!-- Theme Selection Symbol Buttons -->
+              <div class="nav-control-group theme-toggle-group" role="group" aria-label="Theme Selection">
+                <button type="button" class="btn-nav-symbol active" id="themeLightBtn" data-theme-val="light" aria-label="Light Mode" title="Light Mode" aria-pressed="true">
+                  <i class="bi bi-sun-fill"></i>
+                </button>
+                <button type="button" class="btn-nav-symbol" id="themeDarkBtn" data-theme-val="dark" aria-label="Dark Mode" title="Dark Mode" aria-pressed="false">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+              </div>
+
+              <!-- Direction Selection Text Buttons -->
+              <div class="nav-control-group dir-toggle-group" role="group" aria-label="Layout Direction">
+                <button type="button" class="btn-nav-dir active" id="dirLtrBtn" data-dir-val="ltr" aria-label="Left to Right Direction" aria-pressed="true">
+                  LTR
+                </button>
+                <button type="button" class="btn-nav-dir" id="dirRtlBtn" data-dir-val="rtl" aria-label="Right to Left Direction" aria-pressed="false">
+                  RTL
+                </button>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="navbar-nav-cta">
+              <a href="#bookingCard" class="btn-luxury btn-luxury-primary btn-luxury-sm text-nowrap">
+                <i class="bi bi-calendar2-heart me-1"></i> Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ========================================================================
+         SECTION 1: CONTACT HERO & BREADCRUMBS
+         ======================================================================== -->
+    <section class="section-padding bg-ivory pt-5 mt-5" aria-labelledby="contactHeroHeading">
+      <div class="container pt-3">
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb" class="breadcrumb-luxury">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contact &amp; Booking</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="eyebrow"><i class="bi bi-calendar2-heart me-1 text-gold"></i> APPOINTMENT CONCIERGE</span>
+            <h1 id="contactHeroHeading" class="mb-3">Let's Create Your Perfect Look</h1>
+            <div class="divider-gold"></div>
+            <p class="lead-luxury mb-4">
+              Schedule your luxury lash extensions, lash lift, or sculpted brow appointment. Select your preferred date, time, and styling preferences below.
+            </p>
+            <div class="d-flex flex-wrap gap-4 text-muted-custom small">
+              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Instant Booking Preview</div>
+              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> 24h Concierge Confirmation</div>
+              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Private Treatment Suites</div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-luxury p-4 bg-blush shadow-sm">
+              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
+                <img src="assets/images/about/about-studio.jpg" alt="Lash &amp; Brow Studio Sanctuary Suite" class="w-100 h-100 object-fit-cover">
+              </div>
+              <h2 class="h5 font-serif mb-3">Concierge Assistance</h2>
+              <p class="text-muted-custom small mb-3">
+                Have questions regarding patch tests, sensitive eyes, or existing foreign sets? Our client coordinator is happy to assist you directly.
+              </p>
+              <div class="d-flex align-items-center gap-3">
+                <a href="tel:+919876543210" class="btn-luxury btn-luxury-outline btn-luxury-sm">
+                  <i class="bi bi-telephone me-1"></i> Call Concierge
+                </a>
+                <a href="mailto:hello@lashbrowstudio.com" class="btn-luxury btn-luxury-secondary btn-luxury-sm">
+                  <i class="bi bi-envelope me-1"></i> Email Studio
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 2: CONTACT DETAILS & APPOINTMENT BOOKING FORM (TWO COLUMNS)
+         ======================================================================== -->
+    <section class="section-padding bg-blush" id="bookingCard" aria-labelledby="bookingFormHeading">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <!-- Col 1: Studio Contact Details & Hours -->
+          <div class="col-lg-4 order-lg-1 order-2">
+            <div class="card-luxury p-4 p-md-5">
+              <span class="eyebrow">VISIT OUR SANCTUARY</span>
+              <h2 class="h3 font-serif mb-4">Studio Information</h2>
+
+              <div class="footer-contact-item mb-4">
+                <i class="bi bi-geo-alt fs-4 text-gold"></i>
+                <div>
+                  <h3 class="h6 font-serif mb-1">Studio Address</h3>
+                  <p class="text-muted-custom small mb-0">
+                    450 Luxury Promenade, Suite 200<br>
+                    Beverly Hills, CA 90210
+                  </p>
+                </div>
+              </div>
+
+              <div class="footer-contact-item mb-4">
+                <i class="bi bi-telephone fs-4 text-gold"></i>
+                <div>
+                  <h3 class="h6 font-serif mb-1">Direct Telephone</h3>
+                  <a href="tel:+919876543210" class="text-charcoal small fw-semibold">+91 98765 43210</a>
+                  <p class="text-muted-custom small mb-0">Call or SMS for immediate inquiries</p>
+                </div>
+              </div>
+
+              <div class="footer-contact-item mb-4">
+                <i class="bi bi-envelope fs-4 text-gold"></i>
+                <div>
+                  <h3 class="h6 font-serif mb-1">Email Inquiries</h3>
+                  <a href="mailto:hello@lashbrowstudio.com" class="text-charcoal small fw-semibold">hello@lashbrowstudio.com</a>
+                  <p class="text-muted-custom small mb-0">We reply within 2–4 hours</p>
+                </div>
+              </div>
+
+              <div class="footer-contact-item mb-0">
+                <i class="bi bi-clock fs-4 text-gold"></i>
+                <div>
+                  <h3 class="h6 font-serif mb-1">Studio Hours</h3>
+                  <p class="text-muted-custom small mb-0">
+                    Tuesday – Saturday: 9:00 AM – 7:00 PM<br>
+                    Sunday: 10:00 AM – 4:00 PM<br>
+                    Monday: Closed for Studio Deep Sanitization
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Interactive Appointment Booking Form -->
+          <div class="col-lg-8 order-lg-2 order-1">
+            <div class="card-luxury p-4 p-md-5 bg-white shadow-md">
+              <div class="mb-4">
+                <span class="eyebrow eyebrow-rose">ONLINE APPOINTMENT REQUEST</span>
+                <h2 id="bookingFormHeading" class="h2 font-serif">Reserve Your Lash &amp; Brow Session</h2>
+                <div class="divider-gold"></div>
+                <p class="text-muted-custom small">
+                  Fill in your preferred treatment and contact information. Fields marked with an asterisk (<span class="text-danger">*</span>) are required.
+                </p>
+              </div>
+
+              <form id="studioBookingForm" class="form-luxury" novalidate>
+                <!-- Form Validation Summary Alert -->
+                <div id="formValidationBanner" class="form-alert-luxury d-none mb-3" role="alert" aria-live="polite">
+                  <i class="bi bi-exclamation-triangle-fill flex-shrink-0 fs-5 text-danger"></i>
+                  <span id="formValidationBannerText">Please review and complete the highlighted required fields below.</span>
+                </div>
+
+                <div class="row g-3">
+
+                  <!-- 1. Full Name -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-fullName">
+                    <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+                    <input type="text" class="form-control" id="fullName" placeholder="e.g. Eleanor Vance" required autocomplete="name" aria-describedby="fullNameFeedback">
+                    <div class="invalid-feedback" id="fullNameFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please enter your full name (minimum 2 characters).</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Looks perfect</span>
+                    </div>
+                  </div>
+
+                  <!-- 2. Email Address -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-emailAddress">
+                    <label for="emailAddress" class="form-label">Email Address <span class="required-star">*</span></label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="e.g. eleanor@example.com" required autocomplete="email" aria-describedby="emailFeedback">
+                    <div class="invalid-feedback" id="emailFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please enter a valid email address (e.g. eleanor@example.com).</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Valid email address</span>
+                    </div>
+                  </div>
+
+                  <!-- 3. Phone Number -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-phoneNumber">
+                    <label for="phoneNumber" class="form-label">Phone Number <span class="required-star">*</span></label>
+                    <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. +91 98765 43210" required autocomplete="tel" aria-describedby="phoneFeedback">
+                    <div class="invalid-feedback" id="phoneFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please provide a valid 10-digit Indian mobile number.</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Valid Indian mobile format</span>
+                    </div>
+                  </div>
+
+                  <!-- 4. Service Selection Dropdown -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-bookingService">
+                    <label for="bookingService" class="form-label">Service Selection <span class="required-star">*</span></label>
+                    <select class="form-select" id="bookingService" required aria-describedby="serviceFeedback">
+                      <option value="" disabled selected>— Choose your treatment —</option>
+                      <optgroup label="Eyelash Extension Full Sets">
+                        <option value="Classic Lash Extensions">Classic Lash Extensions (From ₹120)</option>
+                        <option value="Hybrid Lash Extensions">Hybrid Lash Extensions (From ₹145)</option>
+                        <option value="Volume Lash Extensions">Volume Lash Extensions (From ₹160)</option>
+                        <option value="Wispy Lash Extensions">Wispy &amp; Custom Lash Sets (From ₹185)</option>
+                      </optgroup>
+                      <optgroup label="Lash Lifts &amp; Tints">
+                        <option value="Lash Lift">Keratin Lash Lift (From ₹75)</option>
+                        <option value="Lash Tint">Custom Lash Tint (From ₹30)</option>
+                        <option value="Lash Lift &amp; Tint">Lash Lift &amp; Tint Combination (₹95)</option>
+                      </optgroup>
+                      <optgroup label="Eyebrow Sculpting">
+                        <option value="Brow Shaping">Precision Brow Shaping (₹35)</option>
+                        <option value="Brow Tinting">Semi-Permanent Brow Tinting (₹30)</option>
+                        <option value="Brow Lamination">Keratin Brow Lamination (₹85)</option>
+                        <option value="Brow Lamination &amp; Tint">Brow Lamination &amp; Tint Combo (₹105)</option>
+                      </optgroup>
+                      <optgroup label="Add-ons &amp; Maintenance">
+                        <option value="Lash Bath">Antibacterial Lash Bath (₹15)</option>
+                        <option value="Lash Removal">Safe Gentle Lash Removal (₹35)</option>
+                      </optgroup>
+                    </select>
+                    <div class="invalid-feedback" id="serviceFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please select your desired lash or brow treatment.</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Treatment selected</span>
+                    </div>
+                  </div>
+
+                  <!-- 5. Preferred Appointment Date -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-bookingDate">
+                    <label for="bookingDate" class="form-label">Preferred Date <span class="required-star">*</span></label>
+                    <input type="date" class="form-control" id="bookingDate" required aria-describedby="dateFeedback">
+                    <div class="invalid-feedback" id="dateFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please select an appointment date (Tuesday – Sunday).</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Date available</span>
+                    </div>
+                  </div>
+
+                  <!-- 6. Preferred Appointment Time -->
+                  <div class="col-md-6 form-group-wrap" id="wrap-bookingTime">
+                    <label for="bookingTime" class="form-label">Preferred Time Window <span class="required-star">*</span></label>
+                    <select class="form-select" id="bookingTime" required aria-describedby="timeFeedback">
+                      <option value="" disabled selected>— Select time window —</option>
+                      <option value="Morning (9:00 AM - 11:00 AM)">Morning (9:00 AM – 11:00 AM)</option>
+                      <option value="Midday (11:30 AM - 1:30 PM)">Midday (11:30 AM – 1:30 PM)</option>
+                      <option value="Afternoon (2:00 PM - 4:00 PM)">Afternoon (2:00 PM – 4:00 PM)</option>
+                      <option value="Late Afternoon (4:30 PM - 6:30 PM)">Late Afternoon (4:30 PM – 6:30 PM)</option>
+                    </select>
+                    <div class="invalid-feedback" id="timeFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please choose a preferred time slot.</span>
+                    </div>
+                    <div class="valid-feedback">
+                      <i class="bi bi-check-circle-fill"></i> <span>Time slot confirmed</span>
+                    </div>
+                  </div>
+
+                  <!-- 7. Client Type (First Visit or Returning) -->
+                  <div class="col-12 form-group-wrap" id="clientTypeGroup">
+                    <label class="form-label d-block">Client Status <span class="required-star">*</span></label>
+                    <div class="d-flex flex-wrap gap-4 pt-1">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="clientType" id="clientTypeNew" value="First-Time Guest" checked>
+                        <label class="form-check-label" for="clientTypeNew">First-Time Studio Guest (Includes Consultation)</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="clientType" id="clientTypeReturning" value="Returning Client">
+                        <label class="form-check-label" for="clientTypeReturning">Returning Client / Refill</label>
+                      </div>
+                    </div>
+                    <div class="invalid-feedback" id="clientTypeFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>Please indicate if you are a first-time guest or returning client.</span>
+                    </div>
+                  </div>
+
+                  <!-- 8. Preferred Lash or Brow Style -->
+                  <div class="col-md-12 form-group-wrap">
+                    <label for="stylePreference" class="form-label">Preferred Style / Mapping Wishlist</label>
+                    <input type="text" class="form-control" id="stylePreference" placeholder="e.g. Natural Doll-Eye, Cat-Eye C-Curl, Fluffy Arches, or Not Sure (Artist Choice)">
+                    <small class="text-muted-custom">Mention any specific curl, length preference, or inspiration look.</small>
+                  </div>
+
+                  <!-- 9. Additional Notes / Allergies -->
+                  <div class="col-12 form-group-wrap">
+                    <label for="bookingNotes" class="form-label">Special Requests, Notes or Sensitivities</label>
+                    <textarea class="form-control" id="bookingNotes" rows="3" placeholder="Please mention any adhesive sensitivities, pregnancy, existing foreign lash extensions, or special event dates."></textarea>
+                  </div>
+
+                  <!-- 10. Required Consent Checkbox -->
+                  <div class="col-12 form-group-wrap" id="consentCheckGroup">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="consentCheck" required aria-describedby="consentFeedback">
+                      <label class="form-check-label" for="consentCheck">
+                        I acknowledge and agree to the studio's 24-hour cancellation policy and agree to arrive with makeup-free, clean lashes. <span class="required-star">*</span>
+                      </label>
+                    </div>
+                    <div class="invalid-feedback" id="consentFeedback">
+                      <i class="bi bi-exclamation-circle-fill"></i> <span>You must agree to the studio cancellation &amp; arrival policy to proceed.</span>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn-luxury btn-luxury-primary btn-luxury-lg w-100" id="submitBookingBtn">
+                      Submit Appointment Request <i class="bi bi-arrow-right ms-2"></i>
+                    </button>
+                    <p class="text-center text-muted-custom small mt-2 mb-0">
+                      <i class="bi bi-shield-lock me-1"></i> Demo booking mode: Generates a verified appointment summary preview instantly.
+                    </p>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: WHAT TO EXPECT ON YOUR FIRST VISIT
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="firstVisitHeading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">YOUR STUDIO EXPERIENCE</span>
+          <h2 id="firstVisitHeading">What to Expect on Your First Visit</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            We prioritize your absolute tranquility from the moment you step through our studio doors.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-sm-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-chat-quote"></i>
+              </div>
+              <h3 class="h5 font-serif">1. 15-Min Consultation</h3>
+              <p class="text-muted-custom small mb-0">
+                We assess your natural eye anatomy, lash growth directions, and lifestyle to custom-design your bespoke lash or brow map.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-music-note-beamed"></i>
+              </div>
+              <h3 class="h5 font-serif">2. Relaxing Sanctuary</h3>
+              <p class="text-muted-custom small mb-0">
+                Sink into ergonomic plush memory foam beds with cashmere blankets, soothing white noise or spa playlists of your choice.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-feather"></i>
+              </div>
+              <h3 class="h5 font-serif">3. Featherlight Artistry</h3>
+              <p class="text-muted-custom small mb-0">
+                Our specialists utilize micro-precision isolation techniques and medical-grade gentle adhesives for a painless, sleep-inducing session.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+            <div class="feature-box">
+              <div class="feature-icon-wrap">
+                <i class="bi bi-magic"></i>
+              </div>
+              <h3 class="h5 font-serif">4. The Big Mirror Reveal</h3>
+              <p class="text-muted-custom small mb-0">
+                Experience the magic mirror moment as you awaken to breathtaking, lightweight fluttery lashes and beautifully framed arches.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: PRE-APPOINTMENT CHECKLIST
+         ======================================================================== -->
+    <section class="section-padding bg-blush" aria-labelledby="checklistHeading">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="eyebrow">PREPARATION GUIDE</span>
+          <h2 id="checklistHeading">Pre-Appointment Checklist</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Follow these simple steps before arriving at our studio to ensure optimal adhesive bonding and maximum comfort.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card-luxury p-4 h-100 bg-white">
+              <div class="text-gold fs-2 mb-2"><i class="bi bi-eye-slash"></i></div>
+              <h3 class="h5 font-serif">Clean Makeup-Free Eyes</h3>
+              <p class="text-muted-custom small mb-0">
+                Arrive without mascara, eyeliner, or concealer. Makeup oils weaken the adhesive bond and diminish retention.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-luxury p-4 h-100 bg-white">
+              <div class="text-gold fs-2 mb-2"><i class="bi bi-cup-hot"></i></div>
+              <h3 class="h5 font-serif">Avoid Heavy Caffeine</h3>
+              <p class="text-muted-custom small mb-0">
+                Skip espresso, energy drinks, or pre-workouts 2 hours prior to avoid fluttering eyelids during fine isolation work.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-luxury p-4 h-100 bg-white">
+              <div class="text-gold fs-2 mb-2"><i class="bi bi-eyeglasses"></i></div>
+              <h3 class="h5 font-serif">Remove Contact Lenses</h3>
+              <p class="text-muted-custom small mb-0">
+                Bring your glasses case. Keeping contacts in with your eyes closed for 90 minutes may cause eye dryness or mild irritation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3">
+            <div class="card-luxury p-4 h-100 bg-white">
+              <div class="text-gold fs-2 mb-2"><i class="bi bi-phone"></i></div>
+              <h3 class="h5 font-serif">Silence Digital Devices</h3>
+              <p class="text-muted-custom small mb-0">
+                To maintain a peaceful sanctuary for you and other studio guests, we request silencing mobile ringtones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: STUDIO LOCATION & INTERACTIVE BIG MAP
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="locationHeading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto mb-4">
+          <span class="eyebrow">STUDIO LOCATION &amp; ARRIVAL</span>
+          <h2 id="locationHeading" class="h2 font-serif">Visit Our Sanctuary</h2>
+          <div class="divider-gold mx-auto"></div>
+          <p class="text-muted-custom mb-3">
+            450 Luxury Promenade, Suite 200 &bull; Beverly Hills, CA 90210 &bull; Complimentary Valet &amp; Subterranean Parking
+          </p>
+          <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mt-3">
+            <a href="tel:+919876543210" class="btn-luxury btn-luxury-outline btn-luxury-sm">
+              <i class="bi bi-telephone me-1"></i> +91 98765 43210
+            </a>
+            <a href="https://maps.google.com/?q=Beverly+Hills,+CA+90210" target="_blank" rel="noopener" class="btn-luxury btn-luxury-primary btn-luxury-sm">
+              <i class="bi bi-compass me-1"></i> Open in Google Maps
+            </a>
+          </div>
+        </div>
+
+        <!-- Fully Visible, Big Interactive Google Map -->
+        <div class="studio-map-wrapper shadow-lg overflow-hidden w-100">
+          <iframe
+            title="Studio Location Google Map"
+            src="https://maps.google.com/maps?q=Beverly+Hills,+CA+90210&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            class="studio-map-iframe"
+            height="500"
+            style="border:0; width: 100%; min-height: 500px; display: block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Interactive Google Map showing Lash &amp; Brow Studio location">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: EMERGENCY INFILLS & SAME-DAY WAITLIST FAQ
+         ======================================================================== -->
+    <section class="section-padding bg-blush" aria-labelledby="waitlistHeading">
+      <div class="container">
+        <div class="card-luxury p-4 p-lg-5 bg-white">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <span class="eyebrow eyebrow-rose"><i class="bi bi-lightning-charge me-1"></i> TIME-SENSITIVE BOOKING</span>
+              <h2 id="waitlistHeading" class="h3 font-serif mb-2">Need a Same-Day Appointment or Urgent Fix?</h2>
+              <p class="text-muted-custom mb-0">
+                Attending a gala, wedding, or sudden flight? While our standard reservations fill 1–2 weeks in advance, we keep 2 daily priority slots on reserve for emergency foreign fills and touch-ups.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="tel:+919876543210" class="btn-luxury btn-luxury-primary">
+                <i class="bi bi-telephone-outbound me-2"></i> Call Priority Line
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       SHARED FOOTER
+       ======================================================================== -->
+  <footer class="footer-luxury">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 footer-col-spacing">
+          <a class="navbar-brand-luxury footer-brand-link mb-3" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+            <span class="brand-logo-wrap">
+              <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="44" height="44">
+            </span>
+            <span class="brand-text-wrap">
+              <span class="brand-main">Lash &amp; Brow Studio</span>
+              <span class="brand-sub">Luxury Aesthetic Artistry</span>
+            </span>
+          </a>
+          <p class="mb-4">
+            Bespoke eyelash extensions, lash lifts, and sculpted brow styling designed to celebrate your unique natural beauty in an immaculate, relaxing sanctuary.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.pinterest.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest lookbook"><i class="bi bi-pinterest"></i></a>
+            <a href="https://www.tiktok.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow our TikTok tutorials"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small"></i> Pricing Menu</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Lookbook Gallery</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Studio</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Treatments</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#classicLashes"><i class="bi bi-chevron-right small"></i> Classic Lashes</a></li>
+            <li><a href="services.html#hybridLashes"><i class="bi bi-chevron-right small"></i> Hybrid Extensions</a></li>
+            <li><a href="services.html#volumeLashes"><i class="bi bi-chevron-right small"></i> Volume &amp; Mega Sets</a></li>
+            <li><a href="services.html#lashLift"><i class="bi bi-chevron-right small"></i> Keratin Lash Lift</a></li>
+            <li><a href="services.html#browTreatments"><i class="bi bi-chevron-right small"></i> Brow Lamination</a></li>
+            <li><a href="pricing.html#refills"><i class="bi bi-chevron-right small"></i> Lash Refills &amp; Baths</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-col-spacing">
+          <h3 class="footer-heading">Studio Visit</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Lash &amp; Brow Studio</strong><br>
+              450 Luxury Promenade, Suite 200<br>
+              Beverly Hills, CA 90210
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <a href="mailto:hello@lashbrowstudio.com" class="text-white text-decoration-none">hello@lashbrowstudio.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              Tue – Sat: 9:00 AM – 7:00 PM<br>
+              Sunday: 10:00 AM – 4:00 PM<br>
+              Monday: Closed
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-center text-md-start">
+          &copy; 2026 Lash &amp; Brow Studio. All rights reserved. Crafted for beauty connoisseurs.
+        </p>
+        <div class="text-muted-custom small">
+          <span>Hygienic</span> &bull; <span>Cruelty-Free</span> &bull; <span>Bespoke Artistry</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BOOKING CONFIRMATION SUMMARY MODAL (DEMO PREVIEW)
+       ======================================================================== -->
+  <div class="modal fade modal-luxury" id="bookingSummaryModal" tabindex="-1" aria-labelledby="modalSummaryTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-check-circle-fill text-gold fs-4"></i>
+            <h2 class="modal-title fs-5" id="modalSummaryTitle">Booking Request Summary (Preview)</h2>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="alert alert-light border border-warning-subtle mb-4">
+            <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+              <span class="small text-muted-custom">Reference Identifier:</span>
+              <strong id="summaryRefCode" class="font-monospace text-dark fs-6">LBS-000000</strong>
+            </div>
+            <small class="text-muted-custom d-block mt-1">
+              <em>This is a local front-end request preview. Our studio concierge will contact you by telephone or email to confirm suite availability.</em>
+            </small>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-borderless small mb-0">
+              <tbody>
+                <tr>
+                  <th scope="row" class="text-muted-custom w-35 py-2">Guest Name:</th>
+                  <td id="summaryName" class="fw-semibold text-dark py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Contact Details:</th>
+                  <td id="summaryContact" class="py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Selected Treatment:</th>
+                  <td id="summaryService" class="fw-bold text-gold py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Requested Date &amp; Window:</th>
+                  <td id="summaryDateTime" class="py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Client Status:</th>
+                  <td id="summaryClientType" class="py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Styling Wishlist:</th>
+                  <td id="summaryStyle" class="py-2">—</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="text-muted-custom py-2">Notes &amp; Sensitivities:</th>
+                  <td id="summaryNotes" class="py-2">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn-luxury btn-luxury-outline btn-luxury-sm" onclick="window.print()">
+            <i class="bi bi-printer me-1"></i> Print / Save Summary
+          </button>
+          <button type="button" class="btn-luxury btn-luxury-primary btn-luxury-sm" data-bs-dismiss="modal">
+            Close &amp; Return
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 Bundle JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
