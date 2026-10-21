@@ -182,7 +182,7 @@
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 1.5rem;
+  padding: 1.35rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
   height: 100%;
@@ -289,17 +289,22 @@
 
 .lash-service-actions {
   display: flex;
-  gap: 0.65rem;
+  gap: 0.5rem;
   margin-top: auto;
+  width: 100%;
 }
 
-.lash-service-actions .btn-luxury {
-  flex: 1;
+.lash-service-actions .btn-luxury,
+.lash-service-actions .btn-luxury-sm {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
   text-align: center;
   justify-content: center;
-  padding: 0.65rem 0.6rem;
-  font-size: 0.78rem;
-  white-space: nowrap;
+  padding: 0.52rem 0.45rem !important;
+  font-size: 0.74rem !important;
+  letter-spacing: 0.04em !important;
+  white-space: nowrap !important;
+  box-sizing: border-box !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -505,18 +510,20 @@
   font-size: 0.85rem;
 }
 
-/* Service Card */
+/* Service Card Component */
 .service-card-img-wrap {
   position: relative;
   overflow: hidden;
   aspect-ratio: 4 / 3;
   background-color: var(--color-bg-secondary);
+  width: 100%;
 }
 
 .service-card-img-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -525,41 +532,91 @@
 }
 
 .service-card-body {
-  padding: 2rem 1.8rem;
+  padding: 1.6rem 1.35rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .service-card-price {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--color-gold-text);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+  min-height: 1.75rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  line-height: 1.2;
+}
+
+.service-card-body h3,
+.service-card-title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.32;
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: 0.65rem;
+  min-height: 3.2rem; /* Uniform 2-line height baseline across all cards */
+  display: flex;
+  align-items: flex-start;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 .service-card-meta {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.45rem;
   font-size: 0.85rem;
   color: var(--color-text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
+  min-height: 1.4rem;
+  line-height: 1.4;
 }
 
 .service-card-meta i {
   color: var(--color-dusty-rose-dark);
 }
 
+.service-card-body p,
+.service-card-desc {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-text-muted);
+  margin-bottom: 1.25rem;
+  min-height: 4.2rem; /* Equal height allocation for description across cards */
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
 .service-card-footer {
   margin-top: auto;
-  padding-top: 1.25rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--color-border-subtle);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.service-card-footer .btn-luxury {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.52rem 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 /* --------------------------------------------------------------------------
@@ -877,6 +934,28 @@
 /* --------------------------------------------------------------------------
    Benefits & Feature Box
    -------------------------------------------------------------------------- */
+.section-padding.commitment-section {
+  padding-block: clamp(3.5rem, 6vw, 5rem);
+}
+
+.commitment-section .section-header {
+  max-width: 760px;
+  margin: 0 auto 2.5rem;
+}
+
+.commitment-grid {
+  align-items: stretch;
+}
+
+.commitment-grid > [class*="col-"] {
+  display: flex;
+}
+
+.commitment-section .feature-box {
+  width: 100%;
+  padding: 2rem 1.8rem;
+}
+
 .feature-box {
   padding: 2.2rem 1.8rem;
   background-color: var(--color-bg-card);
@@ -885,6 +964,8 @@
   box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
   height: 100%;
+  display: flex;
+  flex-direction: column;
   color: var(--color-text-primary);
 }
 
@@ -892,6 +973,18 @@
   transform: translateY(-6px);
   border-color: var(--color-champagne-gold);
   box-shadow: var(--shadow-md);
+}
+
+.feature-box h3 {
+  min-height: 2.8rem;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.feature-box p {
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 .feature-icon-wrap {
@@ -913,6 +1006,28 @@
   color: var(--color-on-accent);
 }
 
+@media (max-width: 767.98px) {
+  .section-padding.commitment-section {
+    padding-block: 3.5rem;
+  }
+
+  .commitment-section .section-header {
+    margin-bottom: 2rem;
+  }
+
+  .commitment-grid {
+    row-gap: 1rem;
+  }
+
+  .commitment-section .feature-box {
+    padding: 1.5rem;
+  }
+
+  .commitment-section .feature-box h3 {
+    min-height: 0;
+  }
+}
+
 /* --------------------------------------------------------------------------
    Step Process Cards
    -------------------------------------------------------------------------- */
@@ -921,6 +1036,8 @@
   position: relative;
   padding: 2.2rem 1.6rem;
   height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-bg-card);
   border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
@@ -932,6 +1049,19 @@
 .step-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-champagne-gold);
+}
+
+.step-card h3 {
+  min-height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.step-card p {
+  flex-grow: 1;
+  margin-bottom: 0;
 }
 
 .step-number {
@@ -1001,6 +1131,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: auto;
   padding-top: 1.25rem;
   border-top: 1px solid var(--color-border-subtle);
 }
@@ -1123,9 +1254,69 @@
   color: var(--color-gold-text);
 }
 
+.session-addons-column {
+  width: 100%;
+  max-width: 960px;
+}
+
+.session-addons-section .pricing-item-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4.5rem 7.25rem;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.session-addons-section .pricing-item-row > div:first-child {
+  min-width: 0;
+}
+
+.session-addons-section .pricing-item-meta {
+  display: contents;
+}
+
+.session-addons-section .pricing-item-price {
+  justify-self: end;
+  white-space: nowrap;
+}
+
+.session-addons-section .pricing-item-meta .btn-luxury {
+  width: 100%;
+  justify-content: center;
+  white-space: nowrap;
+}
+
 .pricing-badge-popular-card {
   border: 2px solid var(--color-champagne-gold);
   position: relative;
+}
+
+@media (max-width: 767.98px) {
+  .session-addons-section .pricing-item-row {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0.85rem;
+    align-items: start;
+  }
+
+  .session-addons-section .pricing-item-meta {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed var(--color-border);
+    text-align: start;
+  }
+
+  .session-addons-section .pricing-item-price {
+    justify-self: auto;
+  }
+
+  .session-addons-section .pricing-item-meta .btn-luxury {
+    width: auto;
+    min-width: 7.25rem;
+    max-width: 100%;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1167,6 +1358,31 @@
 .form-luxury .form-control::placeholder {
   color: var(--color-text-muted);
   font-size: 0.9rem;
+}
+
+#bookingCard .footer-contact-item > i {
+  flex-shrink: 0;
+}
+
+#bookingCard .footer-contact-item > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-luxury #bookingDate {
+  color-scheme: light;
+  padding-inline-end: 2.75rem;
+}
+
+.form-luxury #bookingDate::-webkit-calendar-picker-indicator {
+  width: 1.1rem;
+  height: 1.1rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+[data-theme="dark"] .form-luxury #bookingDate {
+  color-scheme: dark;
 }
 
 .form-luxury .form-check-input {
@@ -1525,6 +1741,32 @@
   flex-direction: column;
 }
 
+.standard-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+}
+
+.standard-grid-item {
+  display: flex;
+  min-width: 0;
+}
+
+.standard-grid .standard-card {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(1.25rem, 2vw, 1.8rem);
+}
+
+.standard-grid .standard-card h3 {
+  min-height: 2.5em;
+}
+
+.standard-grid .standard-card p {
+  flex-grow: 1;
+}
+
 .standard-card:hover {
   transform: translateY(-5px);
   border-color: var(--color-champagne-gold);
@@ -1548,4 +1790,753 @@
 .standard-card:hover .standard-icon {
   background-color: var(--color-champagne-gold);
   color: var(--color-on-accent);
+}
+
+/* ==========================================================================
+   HOME PAGE 2 DEDICATED LUXURY COMPONENTS
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Home 2 Editorial Hero & Trust Bar
+   -------------------------------------------------------------------------- */
+.hero-editorial-home2 {
+  position: relative;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.hero-editorial-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  background-color: var(--color-champagne-gold-light);
+  color: var(--color-gold-text);
+  border: 1px solid var(--color-border-gold);
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.hero-editorial-img-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--color-border);
+}
+
+.hero-editorial-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-floating-glass-card {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(25, 20, 22, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(214, 183, 125, 0.35);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.4rem;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: 3;
+}
+
+.hero-floating-glass-card > div:last-child {
+  min-width: 0;
+  text-align: start;
+}
+
+[dir="rtl"] .hero-floating-glass-card {
+  right: auto;
+  left: 24px;
+}
+
+.hero-glass-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--color-champagne-gold);
+  color: var(--color-on-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.hero-glass-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-glass-sub {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+/* Trust Ribbon Bar */
+.hero-trust-bar {
+  background-color: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.trust-item-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-dusty-rose-light);
+  color: var(--color-dusty-rose-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.trust-item-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--color-text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.trust-item-desc {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. Home 2 Horizontal / Wide Signature Services
+   -------------------------------------------------------------------------- */
+.service-card-wide {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-wide:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.service-card-wide .row {
+  margin: 0;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.service-card-wide .col-md-7 {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-wide-img-col {
+  padding: 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .service-card-wide-img-col {
+    position: relative;
+    min-height: 100%;
+  }
+
+  .service-card-wide-img-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .service-card-wide-img-col {
+    width: 100%;
+  }
+
+  .service-card-wide-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    min-height: 230px;
+  }
+}
+
+.service-card-wide-img-wrap {
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.service-card-wide-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.service-card-wide:hover .service-card-wide-img-wrap img {
+  transform: scale(1.05);
+}
+
+.service-card-wide-body {
+  padding: 1.8rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.service-card-wide-body h3 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.service-card-wide-body .service-card-price {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-gold-text);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  line-height: 1.2;
+}
+
+.service-card-wide-body .service-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+
+.service-card-wide-body .service-card-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin-bottom: 0.75rem;
+}
+
+.service-tag-pill {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  background-color: var(--color-champagne-gold-light);
+  color: var(--color-gold-text);
+  margin-bottom: 0.6rem;
+  align-self: flex-start;
+}
+
+.service-checklist-luxury {
+  list-style: none;
+  padding: 0;
+  margin: 0.65rem 0 1.25rem 0;
+  flex-grow: 1;
+}
+
+.service-checklist-luxury li {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.45rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  line-height: 1.45;
+}
+
+.service-checklist-luxury li i {
+  color: var(--color-champagne-gold);
+  font-size: 0.9rem;
+  margin-top: 0.12rem;
+  flex-shrink: 0;
+}
+
+.service-card-wide-body .service-card-footer {
+  margin-top: auto;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--color-border-subtle);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100%;
+}
+
+.service-card-wide-body .service-card-footer .btn-luxury {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-align: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* --------------------------------------------------------------------------
+   3. Atelier Pillars (Why Choose Us - Home 2)
+   -------------------------------------------------------------------------- */
+.atelier-split-wrap {
+  position: relative;
+}
+
+.atelier-feature-img-wrap {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--color-border);
+  height: 100%;
+  min-height: 480px;
+}
+
+.atelier-feature-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.atelier-badge-overlay {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  background: rgba(25, 20, 22, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(214, 183, 125, 0.4);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1.15rem;
+  color: #FFFFFF;
+  z-index: 2;
+}
+
+[dir="rtl"] .atelier-badge-overlay {
+  left: auto;
+  right: 24px;
+}
+
+.atelier-pillar-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1.15rem;
+  transition: var(--transition-smooth);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.atelier-pillar-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-sm);
+}
+
+.atelier-pillar-number {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-champagne-gold);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 38px;
+}
+
+.atelier-pillar-title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.35rem;
+}
+
+.atelier-pillar-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Transformation Showcase Cards (Home 2)
+   -------------------------------------------------------------------------- */
+.transformation-card-luxury {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.transformation-card-luxury:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.transformation-img-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.transformation-half {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.transformation-half img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.transformation-label-pill {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(25, 20, 22, 0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+[dir="rtl"] .transformation-label-pill {
+  left: auto;
+  right: 10px;
+}
+
+.transformation-label-after {
+  background: var(--color-champagne-gold);
+  color: var(--color-on-accent);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.transformation-card-body {
+  padding: 1.4rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   5. Beauty Experts / Stylist Profile Cards (Home 2)
+   -------------------------------------------------------------------------- */
+.expert-card-luxury {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.expert-card-luxury:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.expert-img-wrap {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+}
+
+.expert-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.expert-card-luxury:hover .expert-img-wrap img {
+  transform: scale(1.05);
+}
+
+.expert-card-body {
+  padding: 1.6rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.expert-name {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.expert-role {
+  font-size: 0.82rem;
+  color: var(--color-gold-text);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.expert-credentials-badge {
+  display: inline-block;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.72rem;
+  background-color: var(--color-dusty-rose-light);
+  color: var(--color-dusty-rose-dark);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.85rem;
+  border: 1px solid var(--color-border);
+}
+
+.expert-bio {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   6. VIP Reviews & Testimonials (Home 2)
+   -------------------------------------------------------------------------- */
+.vip-review-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.2rem 1.8rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.vip-review-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.vip-review-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.1rem;
+}
+
+.vip-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #198754;
+  background-color: rgba(25, 135, 84, 0.1);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-full);
+}
+
+.vip-review-text {
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   7. Membership & Studio Packages (Home 2)
+   -------------------------------------------------------------------------- */
+.membership-package-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2.2rem 1.8rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.membership-package-card.package-highlight {
+  border: 2px solid var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.membership-package-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-champagne-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.package-popular-ribbon {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: var(--color-champagne-gold);
+  color: #191416;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 10px rgba(199, 166, 106, 0.35);
+  z-index: 5;
+}
+
+[dir="rtl"] .package-popular-ribbon {
+  right: auto;
+  left: 14px;
+}
+
+.package-price-number {
+  font-family: var(--font-serif);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-gold-text);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.package-savings-pill {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #198754;
+  background-color: rgba(25, 135, 84, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+.membership-package-card .service-checklist-luxury {
+  flex-grow: 1;
+}
+
+[data-theme="dark"] .vip-verified-badge,
+[data-theme="dark"] .package-savings-pill {
+  color: #4ade80 !important;
+  background-color: rgba(74, 222, 128, 0.15) !important;
+  border: 1px solid rgba(74, 222, 128, 0.3) !important;
+}
+
+/* --------------------------------------------------------------------------
+   8. Concierge Sanctuary & Appointment Quick Request (Home 2)
+   -------------------------------------------------------------------------- */
+.concierge-sanctuary-box {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.concierge-info-side {
+  padding: 3rem 2.5rem;
+}
+
+.concierge-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.concierge-contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-dusty-rose-light);
+  color: var(--color-dusty-rose-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.concierge-form-side {
+  background-color: var(--color-bg-secondary);
+  padding: 3rem 2.5rem;
+  border-left: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .concierge-form-side {
+  border-left: none;
+  border-right: 1px solid var(--color-border);
 }

@@ -38,7 +38,7 @@
     })();
   </script>
 </head>
-<body>
+<body class="page-about">
 
   <!-- ========================================================================
        SHARED NAVIGATION BAR
@@ -66,8 +66,14 @@
         <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
           <!-- Center Navigation Links -->
           <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-luxury" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
@@ -288,9 +294,9 @@
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="standard-grid">
           <!-- Standard 1 -->
-          <div class="col-lg-3 col-md-6">
+          <div class="standard-grid-item">
             <div class="standard-card">
               <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
                 <img src="assets/images/about/hospital-grade-sanitation.jpg" alt="Hospital-Grade Medical Autoclave Sterilization" class="w-100 h-100 object-fit-cover" loading="lazy">
@@ -306,7 +312,7 @@
           </div>
 
           <!-- Standard 2 -->
-          <div class="col-lg-3 col-md-6">
+          <div class="standard-grid-item">
             <div class="standard-card">
               <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
                 <img src="assets/images/pricing/bundle-radiance.jpg" alt="Featherweight Japanese Silk Lash Fibers" class="w-100 h-100 object-fit-cover" loading="lazy">
@@ -322,7 +328,7 @@
           </div>
 
           <!-- Standard 3 -->
-          <div class="col-lg-3 col-md-6">
+          <div class="standard-grid-item">
             <div class="standard-card">
               <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
                 <img src="assets/images/services/lash-mapping-process.jpg" alt="Facial Geometry &amp; Eye Symmetry Mapping" class="w-100 h-100 object-fit-cover" loading="lazy">
@@ -338,7 +344,7 @@
           </div>
 
           <!-- Standard 4 -->
-          <div class="col-lg-3 col-md-6">
+          <div class="standard-grid-item">
             <div class="standard-card">
               <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
                 <img src="assets/images/about/about-studio.jpg" alt="Ergonomic Cloud Treatment Suites" class="w-100 h-100 object-fit-cover" loading="lazy">

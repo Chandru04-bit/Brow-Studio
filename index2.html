@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lash & Brow Studio — Haute Couture Eyelash Extensions, Keratin Lash Lifts, and Bespoke Eyebrow Architecture in Beverly Hills. Master artistry, medical-grade safety, and enduring elegance.">
+  <meta name="keywords" content="lash extensions, russian volume lashes, brow lamination, ombre brows, lash lift, beverly hills lash studio, luxury beauty salon">
+  <title>Home 2 — Haute Couture Lash &amp; Brow Studio | Luxury Artistry</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo-l.svg">
+
+  <!-- Google Fonts: Cormorant Garamond & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Immediate Theme & Direction Initialization (Prevents Flash) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('studio-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+      const savedDir = localStorage.getItem('studio-direction') || 'ltr';
+      document.documentElement.setAttribute('dir', savedDir);
+      document.documentElement.dir = savedDir;
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ========================================================================
+       SHARED NAVIGATION BAR
+       ======================================================================== -->
+  <header>
+    <nav class="navbar navbar-expand-xl navbar-luxury fixed-top" aria-label="Main Navigation">
+      <div class="container navbar-container">
+        <!-- Logo on Left -->
+        <a class="navbar-brand navbar-brand-luxury" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+          <span class="brand-logo-wrap">
+            <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="40" height="40">
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-main">Lash &amp; Brow Studio</span>
+            <span class="brand-sub">Luxury Aesthetic Artistry</span>
+          </span>
+        </a>
+
+        <!-- Hamburger Toggler Button (Mobile & Tablet) -->
+        <button class="navbar-toggler" type="button" id="navbarLuxuryToggler" data-bs-toggle="collapse" data-bs-target="#navbarLuxuryCollapse" aria-controls="navbarLuxuryCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list fs-2"></i>
+        </button>
+
+        <!-- Navbar Collapse -->
+        <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
+          <!-- Center Navigation Links -->
+          <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-luxury" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item active" href="index2.html">Home 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Right Controls: Theme Symbols, Direction Buttons & CTA -->
+          <div class="navbar-actions d-flex flex-column flex-lg-row align-items-stretch align-items-lg-center gap-2">
+            <div class="nav-controls-row">
+              <!-- Theme Selection Symbol Buttons -->
+              <div class="nav-control-group theme-toggle-group" role="group" aria-label="Theme Selection">
+                <button type="button" class="btn-nav-symbol active" id="themeLightBtn" data-theme-val="light" aria-label="Light Mode" title="Light Mode" aria-pressed="true">
+                  <i class="bi bi-sun-fill"></i>
+                </button>
+                <button type="button" class="btn-nav-symbol" id="themeDarkBtn" data-theme-val="dark" aria-label="Dark Mode" title="Dark Mode" aria-pressed="false">
+                  <i class="bi bi-moon-stars-fill"></i>
+                </button>
+              </div>
+
+              <!-- Direction Selection Text Buttons -->
+              <div class="nav-control-group dir-toggle-group" role="group" aria-label="Layout Direction">
+                <button type="button" class="btn-nav-dir active" id="dirLtrBtn" data-dir-val="ltr" aria-label="Left to Right Direction" aria-pressed="true">
+                  LTR
+                </button>
+                <button type="button" class="btn-nav-dir" id="dirRtlBtn" data-dir-val="rtl" aria-label="Right to Left Direction" aria-pressed="false">
+                  RTL
+                </button>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="navbar-nav-cta">
+              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary btn-luxury-sm text-nowrap">
+                <i class="bi bi-calendar2-heart me-1"></i> Book Appointment
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ========================================================================
+         SECTION 1: EDITORIAL HERO SECTION (HOME 2)
+         ======================================================================== -->
+    <section class="section-padding hero-editorial-home2 pt-5 mt-5" aria-labelledby="heroEditorialHeading">
+      <div class="container pt-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-editorial-content">
+            <span class="hero-editorial-badge">
+              <i class="bi bi-stars"></i> Haute Couture Beauty Atelier
+            </span>
+            <h1 id="heroEditorialHeading" class="hero-luxury-title mb-3">
+              The Art of Bespoke Lashes &amp; Sculpted Brows
+            </h1>
+            <div class="divider-gold"></div>
+            <p class="lead-luxury mb-4">
+              Indulge in an elevated sanctuary of featherweight Russian volume lashes, keratin curl infusions, and precision ombré brow architecture. Calibrated with microscopic accuracy to harmonize with your unique facial anatomy.
+            </p>
+            <div class="hero-actions d-flex flex-wrap gap-3 mb-4">
+              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                Reserve Appointment <i class="bi bi-arrow-right"></i>
+              </a>
+              <a href="#signatureMenu" class="btn-luxury btn-luxury-outline">
+                Explore Signature Menu
+              </a>
+            </div>
+            <div class="hero-stats-row d-flex align-items-center gap-3 gap-md-4 pt-2 justify-content-center justify-content-lg-start flex-wrap">
+              <div class="hero-stat-item">
+                <div class="font-serif fw-bold fs-3 text-gold">5,000+</div>
+                <div class="text-muted-custom small">Bespoke Sets Styled</div>
+              </div>
+              <div class="hero-stat-item stat-bordered border-start ps-3 ps-md-4 border-secondary-subtle">
+                <div class="font-serif fw-bold fs-3 text-gold">100%</div>
+                <div class="text-muted-custom small">Damage-Free Pledge</div>
+              </div>
+              <div class="hero-stat-item stat-bordered border-start ps-3 ps-md-4 border-secondary-subtle">
+                <div class="font-serif fw-bold fs-3 text-gold">12+</div>
+                <div class="text-muted-custom small">Years Master Artistry</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-editorial-img-wrap">
+              <img src="assets/images/hero/hero-home2.jpg" alt="High-fashion editorial beauty model with voluminous lashes and sculpted eyebrows" class="img-fluid" fetchpriority="high">
+              <div class="hero-floating-glass-card">
+                <div class="hero-glass-icon">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div>
+                  <h4 class="hero-glass-title">Ophthalmic Safety Certified</h4>
+                  <p class="hero-glass-sub">Medical-grade isolation &amp; hypoallergenic adhesives</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST RIBBON BAR -->
+    <div class="hero-trust-bar" aria-label="Studio Trust Pillars">
+      <div class="container">
+        <div class="row g-3 g-md-4 align-items-center">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-item-icon"><i class="bi bi-feather"></i></div>
+              <div>
+                <div class="trust-item-title">Zero-Weight Silk</div>
+                <p class="trust-item-desc">Cashmere &amp; PBT synthetic fibers</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-item-icon"><i class="bi bi-heart-pulse"></i></div>
+              <div>
+                <div class="trust-item-title">Hypoallergenic Glue</div>
+                <p class="trust-item-desc">Formaldehyde-free cyanoacrylate</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-item-icon"><i class="bi bi-clock-history"></i></div>
+              <div>
+                <div class="trust-item-title">4+ Week Retention</div>
+                <p class="trust-item-desc">Extended bond guarantee</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="trust-item">
+              <div class="trust-item-icon"><i class="bi bi-door-closed"></i></div>
+              <div>
+                <div class="trust-item-title">Private Luxury Suites</div>
+                <p class="trust-item-desc">Sanitized HEPA-filtered rooms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================
+         SECTION 2: OUR SIGNATURE SERVICES (2X2 WIDE SPLIT LAYOUT)
+         ======================================================================== -->
+    <section id="signatureMenu" class="section-padding bg-blush" aria-labelledby="servicesHome2Heading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">CURATED SIGNATURE EXPERIENCES</span>
+          <h2 id="servicesHome2Heading">Masterpiece Lash &amp; Brow Treatments</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Each bespoke treatment is calibrated to your eye shape, natural hair density, and lifestyle aspirations.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Service 1: Russian Featherweight Volume -->
+          <div class="col-lg-6 d-flex">
+            <article class="service-card-wide w-100">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-5 service-card-wide-img-col">
+                  <div class="service-card-wide-img-wrap">
+                    <img src="assets/images/lash-styles/dramatic-volume.jpg" alt="Russian Featherweight Volume Lash Extensions" loading="lazy">
+                  </div>
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="service-card-wide-body">
+                    <span class="service-tag-pill">Haute Glamour</span>
+                    <h3 class="h4 font-serif mb-1">Russian Featherweight Volume</h3>
+                    <div class="service-card-price mb-2">From ₹165 <small class="text-muted-custom fs-6 fw-normal">/ set</small></div>
+                    <div class="service-card-meta mb-2">
+                      <span><i class="bi bi-clock me-1 text-rose"></i> 120 Mins</span>
+                      <span><i class="bi bi-stars me-1 text-gold"></i> 3D–6D Fans</span>
+                    </div>
+                    <p class="service-card-desc text-muted-custom small mb-2">
+                      Handcrafted multi-lash silk bouquets creating ethereal depth, seamless density, and dramatic flutter without straining your natural lash line.
+                    </p>
+                    <ul class="service-checklist-luxury">
+                      <li><i class="bi bi-check2-circle"></i> Custom eye geometry mapping (C, CC, D)</li>
+                      <li><i class="bi bi-check2-circle"></i> 0.05mm ultra-fine cashmere silk fibers</li>
+                      <li><i class="bi bi-check2-circle"></i> Includes conditioning lash bath &amp; spoolie</li>
+                    </ul>
+                    <div class="service-card-footer mt-auto pt-3">
+                      <a href="services.html#volumeLashes" class="btn-luxury btn-luxury-secondary btn-luxury-sm">Details</a>
+                      <a href="contact.html?service=Russian%20Featherweight%20Volume" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 2: Bespoke Ombré Powder Brows -->
+          <div class="col-lg-6 d-flex">
+            <article class="service-card-wide w-100">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-5 service-card-wide-img-col">
+                  <div class="service-card-wide-img-wrap">
+                    <img src="assets/images/services/brow-pigment-swatch.jpg" alt="Bespoke Ombré Powder Brows Swatches" loading="lazy">
+                  </div>
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="service-card-wide-body">
+                    <span class="service-tag-pill">Semi-Permanent</span>
+                    <h3 class="h4 font-serif mb-1">Bespoke Ombré Powder Brows</h3>
+                    <div class="service-card-price mb-2">From ₹195 <small class="text-muted-custom fs-6 fw-normal">/ session</small></div>
+                    <div class="service-card-meta mb-2">
+                      <span><i class="bi bi-clock me-1 text-rose"></i> 150 Mins</span>
+                      <span><i class="bi bi-gem me-1 text-gold"></i> 1–3 Years</span>
+                    </div>
+                    <p class="service-card-desc text-muted-custom small mb-2">
+                      Micropigmentation technique depositing thousands of microscopic pigment dots for a soft, airbrushed makeup gradient that frames your face.
+                    </p>
+                    <ul class="service-checklist-luxury">
+                      <li><i class="bi bi-check2-circle"></i> Golden ratio bone-structure mapping</li>
+                      <li><i class="bi bi-check2-circle"></i> Vegan organic pigments tailored to undertone</li>
+                      <li><i class="bi bi-check2-circle"></i> Complimentary 6-week perfecting touch-up</li>
+                    </ul>
+                    <div class="service-card-footer mt-auto pt-3">
+                      <a href="services.html#browTreatments" class="btn-luxury btn-luxury-secondary btn-luxury-sm">Details</a>
+                      <a href="contact.html?service=Bespoke%20Ombre%20Powder%20Brows" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 3: Keratin Lash Infusion & Midnight Gloss -->
+          <div class="col-lg-6 d-flex">
+            <article class="service-card-wide w-100">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-5 service-card-wide-img-col">
+                  <div class="service-card-wide-img-wrap">
+                    <img src="assets/images/services/lash-tint.jpg" alt="Keratin Lash Lift and Deep Midnight Tint" loading="lazy">
+                  </div>
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="service-card-wide-body">
+                    <span class="service-tag-pill">Low Maintenance</span>
+                    <h3 class="h4 font-serif mb-1">Keratin Lash Infusion &amp; Gloss</h3>
+                    <div class="service-card-price mb-2">From ₹110 <small class="text-muted-custom fs-6 fw-normal">/ session</small></div>
+                    <div class="service-card-meta mb-2">
+                      <span><i class="bi bi-clock me-1 text-rose"></i> 65 Mins</span>
+                      <span><i class="bi bi-shield-check me-1 text-gold"></i> 6–8 Weeks</span>
+                    </div>
+                    <p class="service-card-desc text-muted-custom small mb-2">
+                      Perms and conditions natural eyelashes straight from the root with 24k keratin peptides, infused with intense midnight black mineral gloss.
+                    </p>
+                    <ul class="service-checklist-luxury">
+                      <li><i class="bi bi-check2-circle"></i> 90-degree root curl without crimping</li>
+                      <li><i class="bi bi-check2-circle"></i> Plant-derived keratin nourishing mask</li>
+                      <li><i class="bi bi-check2-circle"></i> Zero-maintenance, mascara-free daily luxury</li>
+                    </ul>
+                    <div class="service-card-footer mt-auto pt-3">
+                      <a href="services.html#lashLift" class="btn-luxury btn-luxury-secondary btn-luxury-sm">Details</a>
+                      <a href="contact.html?service=Keratin%20Lash%20Infusion" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Service 4: HD Hybrid Brow Sculpt & Stain -->
+          <div class="col-lg-6 d-flex">
+            <article class="service-card-wide w-100">
+              <div class="row g-0 align-items-stretch">
+                <div class="col-md-5 service-card-wide-img-col">
+                  <div class="service-card-wide-img-wrap">
+                    <img src="assets/images/services/brow-shaping-profile.jpg" alt="HD Hybrid Brow Sculpt and Longwear Stain" loading="lazy">
+                  </div>
+                </div>
+                <div class="col-md-7 d-flex flex-column">
+                  <div class="service-card-wide-body">
+                    <span class="service-tag-pill">High Definition</span>
+                    <h3 class="h4 font-serif mb-1">HD Hybrid Brow Sculpt &amp; Stain</h3>
+                    <div class="service-card-price mb-2">From ₹85 <small class="text-muted-custom fs-6 fw-normal">/ session</small></div>
+                    <div class="service-card-meta mb-2">
+                      <span><i class="bi bi-clock me-1 text-rose"></i> 50 Mins</span>
+                      <span><i class="bi bi-brush me-1 text-gold"></i> 10-Day Skin Stain</span>
+                    </div>
+                    <p class="service-card-desc text-muted-custom small mb-2">
+                      Complete architectural brow transformation combining caliper mapping, gentle threading/waxing, and deep conditioning longwear hybrid dye.
+                    </p>
+                    <ul class="service-checklist-luxury">
+                      <li><i class="bi bi-check2-circle"></i> Symmetrical brow mapping alignment</li>
+                      <li><i class="bi bi-check2-circle"></i> Hybrid tint: up to 10 days skin, 6 weeks hair</li>
+                      <li><i class="bi bi-check2-circle"></i> Argan oil conditioning styling finish</li>
+                    </ul>
+                    <div class="service-card-footer mt-auto pt-3">
+                      <a href="services.html#browTreatments" class="btn-luxury btn-luxury-secondary btn-luxury-sm">Details</a>
+                      <a href="contact.html?service=HD%20Hybrid%20Brow%20Sculpt" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="pricing.html" class="btn-luxury btn-luxury-primary">
+            View Complete Studio Pricing Menu <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 3: WHY CHOOSE OUR STUDIO (THE ATELIER STANDARD SPLIT)
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="whyChooseHome2Heading">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="atelier-split-wrap">
+              <div class="atelier-feature-img-wrap">
+                <img src="assets/images/services/lash-mapping-process.jpg" alt="Master lash stylist delicately isolating natural lashes under luxury ring light" loading="lazy">
+                <div class="atelier-badge-overlay">
+                  <div class="font-serif fw-bold fs-5 text-gold mb-1">99.8% Client Retention</div>
+                  <div class="small text-white opacity-90">Zero lash damage commitment across 5,000+ sets</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <span class="eyebrow">THE ATELIER STANDARD</span>
+            <h2 id="whyChooseHome2Heading" class="mb-3">Where Precision Science Meets High-Fashion Elegance</h2>
+            <div class="divider-gold"></div>
+            <p class="lead-luxury mb-4">
+              We reject cookie-cutter application. Every set is an intimate architectural ritual designed to preserve your natural lash health for years of uninterrupted beauty.
+            </p>
+
+            <div class="atelier-pillar-card">
+              <div class="atelier-pillar-number">01</div>
+              <div>
+                <h3 class="atelier-pillar-title">Microscopic Lash Isolation (0.5mm Margin)</h3>
+                <p class="atelier-pillar-desc">
+                  Every fan is adhered strictly 0.5mm away from your eyelid. This surgical isolation allows natural follicles to shed and regrow without tension, clumping, or premature fallout.
+                </p>
+              </div>
+            </div>
+
+            <div class="atelier-pillar-card">
+              <div class="atelier-pillar-number">02</div>
+              <div>
+                <h3 class="atelier-pillar-title">Ophthalmic Hypoallergenic Adhesives</h3>
+                <p class="atelier-pillar-desc">
+                  Formulated without formaldehyde, carbon black irritants, or harsh fumes. Tested and verified safe for contact lens wearers, dry eyes, and clients with heightened chemical sensitivities.
+                </p>
+              </div>
+            </div>
+
+            <div class="atelier-pillar-card">
+              <div class="atelier-pillar-number">03</div>
+              <div>
+                <h3 class="atelier-pillar-title">Golden Ratio Eye Geometry Calibration</h3>
+                <p class="atelier-pillar-desc">
+                  We measure your eye distance, lid hooding, and pupil positioning to formulate a bespoke map (C, CC, D, or L curls) that visually lifts hooded eyelids and enhances facial balance.
+                </p>
+              </div>
+            </div>
+
+            <div class="atelier-pillar-card">
+              <div class="atelier-pillar-number">04</div>
+              <div>
+                <h3 class="atelier-pillar-title">Hospital-Grade Autoclave Sterilization</h3>
+                <p class="atelier-pillar-desc">
+                  Instruments undergo medical-grade steam autoclave sterilization in individual pouches. Our private suites feature hospital-grade HEPA air filtration for supreme hygiene.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 4: TRANSFORMATION SHOWCASE (BEFORE & AFTER REAL RESULTS)
+         ======================================================================== -->
+    <section class="section-padding bg-blush" aria-labelledby="transformationHeading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">REAL CLIENT RESULTS</span>
+          <h2 id="transformationHeading">Visual Transformations of Beauty</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Examine unretouched macro before-and-after results crafted by our master artists in private suites.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Transformation 1: Sparse Lashes to Featherweight Volume -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="transformation-card-luxury w-100">
+              <div class="transformation-img-pair">
+                <div class="transformation-half">
+                  <img src="assets/images/before-after/lash-before-1.jpg" alt="Straight natural lashes before treatment" loading="lazy">
+                  <span class="transformation-label-pill">Before</span>
+                </div>
+                <div class="transformation-half">
+                  <img src="assets/images/before-after/lash-after-1.jpg" alt="Lush Russian volume lash extensions after treatment" loading="lazy">
+                  <span class="transformation-label-pill transformation-label-after">After</span>
+                </div>
+              </div>
+              <div class="transformation-card-body">
+                <h3 class="h5 font-serif mb-1">Sparse Lashes → Russian Volume</h3>
+                <div class="text-gold small mb-2"><i class="bi bi-star-fill"></i> 4D Featherweight Bouquet</div>
+                <p class="text-muted-custom small mb-0">
+                  Client had straight downward lashes with 0.07mm diameter. Styled with handmade 4D volume fans in CC-curl (8mm–12mm) creating an open-eye butterfly effect.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformation 2: Asymmetrical Brows to Laminated Arch -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="transformation-card-luxury w-100">
+              <div class="transformation-img-pair">
+                <div class="transformation-half">
+                  <img src="assets/images/before-after/brow-before-1.jpg" alt="Thin sparse eyebrows before lamination" loading="lazy">
+                  <span class="transformation-label-pill">Before</span>
+                </div>
+                <div class="transformation-half">
+                  <img src="assets/images/before-after/brow-after-1.jpg" alt="Full laminated and sculpted eyebrows after treatment" loading="lazy">
+                  <span class="transformation-label-pill transformation-label-after">After</span>
+                </div>
+              </div>
+              <div class="transformation-card-body">
+                <h3 class="h5 font-serif mb-1">Overplucked Brows → Fluffy Arch</h3>
+                <div class="text-gold small mb-2"><i class="bi bi-star-fill"></i> Lamination &amp; Dark Tint</div>
+                <p class="text-muted-custom small mb-0">
+                  Restructured stubborn downward hairs into a feathery, brushed-up model arch. Infused with dark ash tint to seamlessly conceal sparse gaps in the tail.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformation 3: Hooded Eye Correction to Winged Cat-Eye -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="transformation-card-luxury w-100">
+              <div class="transformation-img-pair">
+                <div class="transformation-half">
+                  <img src="assets/images/lash-styles/soft-volume.jpg" alt="Natural soft volume lashes" loading="lazy">
+                  <span class="transformation-label-pill">Natural</span>
+                </div>
+                <div class="transformation-half">
+                  <img src="assets/images/lash-styles/cat-eye-style.jpg" alt="Elongated cat-eye wing lash extensions" loading="lazy">
+                  <span class="transformation-label-pill transformation-label-after">Couture</span>
+                </div>
+              </div>
+              <div class="transformation-card-body">
+                <h3 class="h5 font-serif mb-1">Hooded Eye → Cat-Eye Ascend</h3>
+                <div class="text-gold small mb-2"><i class="bi bi-star-fill"></i> L-Curl Wing Flare</div>
+                <p class="text-muted-custom small mb-0">
+                  Engineered with gradual length graduation from 7mm inner corners to 13mm outer flare. Creates an instantaneous winged eyeliner effect without makeup.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="gallery.html" class="btn-luxury btn-luxury-outline">
+            Explore Complete 50+ Lookbook Portfolio <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 5: MEET OUR BEAUTY EXPERTS (MASTER STYLISTS & BROW ARCHITECTS)
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="expertsHeading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">MASTER ARTISTS</span>
+          <h2 id="expertsHeading">Meet Our Master Stylists &amp; Brow Architects</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Trained at world-renowned beauty academies, our licensed specialists combine artistic vision with anatomical precision.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Specialist 1: Elena Vance -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="expert-card-luxury w-100">
+              <div class="expert-img-wrap">
+                <img src="assets/images/team/expert-elena.jpg" alt="Elena Vance, Founder and Master Lash Artist holding gold tweezers" loading="lazy">
+              </div>
+              <div class="expert-card-body">
+                <h3 class="expert-name">Elena Vance</h3>
+                <div class="expert-role">Founder &amp; Master Lash Artist</div>
+                <span class="expert-credentials-badge">
+                  <i class="bi bi-patch-check-fill me-1"></i> 12+ Yrs | London Lash Pro Certified
+                </span>
+                <p class="expert-bio">
+                  With over a decade of luxury salon and high-fashion editorial experience, Elena pioneered our zero-damage isolation protocol. She specializes in Russian mega volume and delicate eye correction mapping.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a href="contact.html?artist=Elena%20Vance" class="btn-luxury btn-luxury-primary w-100">
+                    Book with Elena <i class="bi bi-calendar-heart ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Specialist 2: Chloe Monet -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="expert-card-luxury w-100">
+              <div class="expert-img-wrap">
+                <img src="assets/images/team/expert-chloe.jpg" alt="Chloe Monet, Senior Brow Architect and Micropigmentation Specialist" loading="lazy">
+              </div>
+              <div class="expert-card-body">
+                <h3 class="expert-name">Chloe Monet</h3>
+                <div class="expert-role">Senior Brow Architect &amp; Pigment Artist</div>
+                <span class="expert-credentials-badge">
+                  <i class="bi bi-patch-check-fill me-1"></i> 8+ Yrs | PhiBrows Master Certified
+                </span>
+                <p class="expert-bio">
+                  A master of golden-ratio facial architecture, Chloe transforms uneven brows into bespoke ombré powder masterpieces. Her micro-pixel shading mimics soft powder makeup that lasts up to 3 years.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a href="contact.html?artist=Chloe%20Monet" class="btn-luxury btn-luxury-primary w-100">
+                    Book with Chloe <i class="bi bi-calendar-heart ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Specialist 3: Maya Lin -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <article class="expert-card-luxury w-100">
+              <div class="expert-img-wrap">
+                <img src="assets/images/team/expert-maya.jpg" alt="Maya Lin, Master Lash Stylist and Keratin Specialist in studio" loading="lazy">
+              </div>
+              <div class="expert-card-body">
+                <h3 class="expert-name">Maya Lin</h3>
+                <div class="expert-role">Master Stylist &amp; Keratin Specialist</div>
+                <span class="expert-credentials-badge">
+                  <i class="bi bi-patch-check-fill me-1"></i> 7+ Yrs | YUMILashes International
+                </span>
+                <p class="expert-bio">
+                  Renowned for her wispy Kim-K mappings and 24k keratin peptide infusions, Maya creates effortlessly textured lash lines that hold up to 8 weeks with featherweight comfort.
+                </p>
+                <div class="mt-auto pt-2">
+                  <a href="contact.html?artist=Maya%20Lin" class="btn-luxury btn-luxury-primary w-100">
+                    Book with Maya <i class="bi bi-calendar-heart ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 6: VIP CLIENT TESTIMONIALS (EDITORIAL REVIEWS)
+         ======================================================================== -->
+    <section class="section-padding bg-blush" aria-labelledby="testimonialsHome2Heading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">VIP CLIENT VOICES</span>
+          <h2 id="testimonialsHome2Heading">Reflections of Enduring Elegance</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Hear from regulars and high-profile guests who trust our Beverly Hills sanctuary for their signature looks.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="vip-review-card w-100">
+              <div class="vip-review-header">
+                <div class="star-rating mb-0" aria-label="5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="vip-verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Guest</span>
+              </div>
+              <p class="vip-review-text">
+                "I have visited luxury beauty studios in Paris, London, and Manhattan, but Elena's artistry is in a league of its own. My Russian volume set feels completely weightless, and my natural lashes are healthier than ever after 8 continuous months."
+              </p>
+              <div class="testimonial-author mt-auto pt-3 border-top">
+                <img src="assets/images/testimonials/client-1.jpg" alt="Genevieve Sterling" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Genevieve Sterling</div>
+                  <div class="text-gold small">Beverly Hills &bull; Russian Volume Full Set</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="vip-review-card w-100">
+              <div class="vip-review-header">
+                <div class="star-rating mb-0" aria-label="5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="vip-verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Guest</span>
+              </div>
+              <p class="vip-review-text">
+                "Chloe completely reshaped my asymmetrical, sparse brows with her ombré powder technique. The healing process was painless, and I wake up every morning feeling fully polished without needing eyebrow pencils or mascara."
+              </p>
+              <div class="testimonial-author mt-auto pt-3 border-top">
+                <img src="assets/images/testimonials/client-2.jpg" alt="Camille Dupont" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Camille Dupont</div>
+                  <div class="text-gold small">West Hollywood &bull; Ombré Powder Brows</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="vip-review-card w-100">
+              <div class="vip-review-header">
+                <div class="star-rating mb-0" aria-label="5 stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <span class="vip-verified-badge"><i class="bi bi-check-circle-fill"></i> Verified Guest</span>
+              </div>
+              <p class="vip-review-text">
+                "Under 4K studio cameras, clumpy lashes or imperfect brows are immediate dealbreakers. Maya's wispy sets photograph with breathtaking symmetry. The private suites are spotless, quiet, and deeply relaxing."
+              </p>
+              <div class="testimonial-author mt-auto pt-3 border-top">
+                <img src="assets/images/testimonials/client-3.jpg" alt="Natasha Roman" class="testimonial-avatar" loading="lazy">
+                <div>
+                  <div class="testimonial-name">Natasha Roman</div>
+                  <div class="text-gold small">Editorial Model &bull; Wispy Hybrid &amp; Lamination</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 7: PRICING & SIGNATURE MEMBERSHIPS (HOME 2)
+         ======================================================================== -->
+    <section class="section-padding bg-ivory" aria-labelledby="packagesHeading">
+      <div class="container">
+        <div class="section-header text-center max-w-700 mx-auto">
+          <span class="eyebrow">TRANSPARENT VALUE</span>
+          <h2 id="packagesHeading">Curated Packages &amp; VIP Memberships</h2>
+          <div class="divider-gold"></div>
+          <p class="lead-luxury">
+            Save on bundled treatments or enjoy uninterrupted monthly perfection with our exclusive studio membership.
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Package 1: The Essential Radiance Suite -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="membership-package-card w-100">
+              <div class="service-card-img-wrap rounded mb-3">
+                <img src="assets/images/pricing/bundle-radiance.jpg" alt="Essential Radiance Package with classic lashes and sculpted brows" loading="lazy">
+              </div>
+              <h3 class="h4 font-serif mb-1">Everyday Radiance Suite</h3>
+              <p class="text-muted-custom small mb-3">Clean definition for low-key luxury and effortless morning elegance.</p>
+              <div class="package-price-number">₹175</div>
+              <span class="package-savings-pill"><i class="bi bi-tag-fill me-1"></i> Save ₹30 vs Individual Services</span>
+              <ul class="service-checklist-luxury mb-4">
+                <li><i class="bi bi-check2-circle"></i> Classic 1:1 Silk Extension Full Set</li>
+                <li><i class="bi bi-check2-circle"></i> Precision Brow Mapping &amp; Defining Tint</li>
+                <li><i class="bi bi-check2-circle"></i> Foaming Tea Tree Lash Cleanser &amp; Brush</li>
+                <li><i class="bi bi-check2-circle"></i> Mulberry Silk Sleeping Mask</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="contact.html?service=Everyday%20Radiance%20Suite" class="btn-luxury btn-luxury-outline w-100">
+                  Reserve Radiance Suite
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 2: The Red Carpet Glamour Suite (HIGHLIGHTED) -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="membership-package-card package-highlight w-100">
+              <span class="package-popular-ribbon"><i class="bi bi-star-fill me-1"></i> Most Popular</span>
+              <div class="service-card-img-wrap rounded mb-3">
+                <img src="assets/images/pricing/bundle-glamour.jpg" alt="Red Carpet Glamour Suite with Russian volume and laminated brows" loading="lazy">
+              </div>
+              <h3 class="h4 font-serif mb-1">The Red Carpet Glamour Suite</h3>
+              <p class="text-muted-custom small mb-3">Our complete head-to-toe transformation for weddings and galas.</p>
+              <div class="package-price-number text-gold">₹260</div>
+              <span class="package-savings-pill"><i class="bi bi-tag-fill me-1"></i> Save ₹55 vs Individual Services</span>
+              <ul class="service-checklist-luxury mb-4">
+                <li><i class="bi bi-check2-circle"></i> Full Russian Volume Set (3D–6D Handmade Fans)</li>
+                <li><i class="bi bi-check2-circle"></i> 24k Keratin Lash Conditioning Infusion</li>
+                <li><i class="bi bi-check2-circle"></i> HD Brow Lamination &amp; Longwear Hybrid Stain</li>
+                <li><i class="bi bi-check2-circle"></i> Collagen Smoothing Under-Eye Treatment</li>
+                <li><i class="bi bi-check2-circle"></i> Luxury Home Aftercare &amp; Castor Elixir Kit</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="contact.html?service=Red%20Carpet%20Glamour%20Suite" class="btn-luxury btn-luxury-primary w-100">
+                  Reserve Glamour Suite <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Package 3: VIP Lash Society Membership -->
+          <div class="col-lg-4 col-md-6 d-flex">
+            <div class="membership-package-card w-100">
+              <div class="service-card-img-wrap rounded mb-3">
+                <img src="assets/images/pricing/bundle-low-maintenance.jpg" alt="VIP Lash Society Monthly Maintenance Membership" loading="lazy">
+              </div>
+              <h3 class="h4 font-serif mb-1">VIP Lash Society</h3>
+              <p class="text-muted-custom small mb-3">Monthly uninterrupted volume maintenance for dedicated clients.</p>
+              <div class="package-price-number">₹199 <small class="fs-6 fw-normal text-muted-custom">/ mo</small></div>
+              <span class="package-savings-pill"><i class="bi bi-tag-fill me-1"></i> Save ₹80 Every Month</span>
+              <ul class="service-checklist-luxury mb-4">
+                <li><i class="bi bi-check2-circle"></i> 2x Bi-Weekly Russian Volume Refills per month</li>
+                <li><i class="bi bi-check2-circle"></i> 1x Monthly Brow Architectural Cleanup &amp; Tint</li>
+                <li><i class="bi bi-check2-circle"></i> 48-Hour Guaranteed Emergency Touch-Ups</li>
+                <li><i class="bi bi-check2-circle"></i> 15% Off All Studio Retail &amp; Growth Serums</li>
+              </ul>
+              <div class="mt-auto">
+                <a href="contact.html?service=VIP%20Lash%20Society" class="btn-luxury btn-luxury-outline w-100">
+                  Join VIP Society
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================
+         SECTION 8: CONCIERGE SANCTUARY & APPOINTMENT REQUEST (HOME 2)
+         ======================================================================== -->
+    <section class="section-padding bg-blush" aria-labelledby="conciergeHeading">
+      <div class="container">
+        <div class="concierge-sanctuary-box">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Info Side -->
+            <div class="col-lg-6 concierge-info-side">
+              <span class="eyebrow">PRIVATE CONCIERGE</span>
+              <h2 id="conciergeHeading" class="mb-3">Begin Your Bespoke Transformation</h2>
+              <div class="divider-gold"></div>
+              <p class="text-muted-custom mb-4">
+                Our private treatment suites are located in the heart of Beverly Hills. Every appointment includes a dedicated eye anatomy consultation, complimentary espresso or champagne, and memory-foam heated massage beds.
+              </p>
+
+              <div class="concierge-contact-item">
+                <div class="concierge-contact-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div>
+                  <div class="fw-bold">Studio Sanctuary Location</div>
+                  <div class="text-muted-custom small">9650 Wilshire Blvd, Suite 400, Beverly Hills, CA 90212</div>
+                  <div class="text-gold small mt-1"><i class="bi bi-p-square"></i> Complimentary Valet Parking Available</div>
+                </div>
+              </div>
+
+              <div class="concierge-contact-item">
+                <div class="concierge-contact-icon">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div>
+                  <div class="fw-bold">Concierge Telephone &amp; Text</div>
+                  <a href="tel:+13108545274" class="text-muted-custom small">+1 (310) 854-5274</a>
+                </div>
+              </div>
+
+              <div class="concierge-contact-item">
+                <div class="concierge-contact-icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div>
+                  <div class="fw-bold">Studio Opening Hours</div>
+                  <div class="text-muted-custom small">Mon &ndash; Sat: 9:00 AM &ndash; 7:30 PM | Sun: 10:00 AM &ndash; 5:00 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Quick Request Form -->
+            <div class="col-lg-6 concierge-form-side">
+              <div class="h4 font-serif mb-2">Request Your Reserved Suite</div>
+              <p class="text-muted-custom small mb-4">Select your desired service and preferred master artist to initiate your booking request.</p>
+
+              <form action="contact.html" method="GET" class="row g-3 form-luxury">
+                <div class="col-12">
+                  <label for="home2ServiceSelect" class="form-label small fw-semibold">Signature Treatment</label>
+                  <select class="form-select form-control" id="home2ServiceSelect" name="service" required>
+                    <option value="" selected disabled>Select Treatment...</option>
+                    <option value="Russian Featherweight Volume">Russian Featherweight Volume (₹165)</option>
+                    <option value="Bespoke Ombre Powder Brows">Bespoke Ombré Powder Brows (₹195)</option>
+                    <option value="Keratin Lash Infusion">Keratin Lash Infusion &amp; Gloss (₹110)</option>
+                    <option value="HD Hybrid Brow Sculpt">HD Hybrid Brow Sculpt &amp; Stain (₹85)</option>
+                    <option value="The Red Carpet Glamour Suite">The Red Carpet Glamour Suite (₹260)</option>
+                    <option value="Everyday Radiance Suite">Everyday Radiance Suite (₹175)</option>
+                    <option value="VIP Lash Society">VIP Lash Society Membership (₹199/mo)</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="home2ArtistSelect" class="form-label small fw-semibold">Preferred Master Specialist</label>
+                  <select class="form-select form-control" id="home2ArtistSelect" name="artist">
+                    <option value="First Available Master Specialist" selected>First Available Master Specialist</option>
+                    <option value="Elena Vance">Elena Vance (Founder &amp; Master Lash Artist)</option>
+                    <option value="Chloe Monet">Chloe Monet (Senior Brow Architect)</option>
+                    <option value="Maya Lin">Maya Lin (Master Lash Stylist &amp; Keratin Specialist)</option>
+                  </select>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="home2DateSelect" class="form-label small fw-semibold">Preferred Date</label>
+                  <input type="date" class="form-control" id="home2DateSelect" name="date">
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="home2TimeSelect" class="form-label small fw-semibold">Preferred Time</label>
+                  <select class="form-select form-control" id="home2TimeSelect" name="time">
+                    <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                    <option value="Afternoon (12:00 PM - 4:00 PM)" selected>Afternoon (12:00 PM - 4:00 PM)</option>
+                    <option value="Evening (4:00 PM - 7:30 PM)">Evening (4:00 PM - 7:30 PM)</option>
+                  </select>
+                </div>
+
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn-luxury btn-luxury-primary w-100">
+                    Continue to Confirmed Booking <i class="bi bi-arrow-right ms-1"></i>
+                  </button>
+                  <div class="text-center mt-2">
+                    <small class="text-muted-custom" style="font-size: 0.74rem;">
+                      <i class="bi bi-lock-fill me-1"></i> Your details are strictly confidential. No pre-payment required.
+                    </small>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       SHARED LUXURY FOOTER
+       ======================================================================== -->
+  <footer class="footer-luxury">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Bio -->
+        <div class="col-lg-4 col-md-6 footer-col-spacing">
+          <a class="navbar-brand-luxury footer-brand-link mb-3" href="index.html" aria-label="Lash &amp; Brow Studio Home">
+            <span class="brand-logo-wrap">
+              <img src="assets/images/logo/logo-l.svg" alt="L" class="brand-logo-img" width="44" height="44">
+            </span>
+            <span class="brand-text-wrap">
+              <span class="brand-main">Lash &amp; Brow Studio</span>
+              <span class="brand-sub">Luxury Aesthetic Artistry</span>
+            </span>
+          </a>
+          <p class="mb-4">
+            Bespoke eyelash extensions, lash lifts, and sculpted brow styling designed to celebrate your unique natural beauty in an immaculate, relaxing sanctuary.
+          </p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.pinterest.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest lookbook"><i class="bi bi-pinterest"></i></a>
+            <a href="https://www.tiktok.com/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Follow our TikTok tutorials"><i class="bi bi-tiktok"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="col-lg-2 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="services.html"><i class="bi bi-chevron-right small"></i> Services</a></li>
+            <li><a href="pricing.html"><i class="bi bi-chevron-right small"></i> Pricing Menu</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Lookbook Gallery</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Studio</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Signature Services -->
+        <div class="col-lg-3 col-md-6 col-6 footer-col-spacing">
+          <h3 class="footer-heading">Treatments</h3>
+          <ul class="footer-links">
+            <li><a href="services.html#classicLashes"><i class="bi bi-chevron-right small"></i> Classic Lashes</a></li>
+            <li><a href="services.html#hybridLashes"><i class="bi bi-chevron-right small"></i> Hybrid Extensions</a></li>
+            <li><a href="services.html#volumeLashes"><i class="bi bi-chevron-right small"></i> Volume &amp; Mega Sets</a></li>
+            <li><a href="services.html#lashLift"><i class="bi bi-chevron-right small"></i> Keratin Lash Lift</a></li>
+            <li><a href="services.html#browTreatments"><i class="bi bi-chevron-right small"></i> Brow Lamination</a></li>
+            <li><a href="pricing.html#refills"><i class="bi bi-chevron-right small"></i> Lash Refills &amp; Baths</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Studio Details -->
+        <div class="col-lg-3 col-md-6 footer-col-spacing">
+          <h3 class="footer-heading">Studio Visit</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <div>
+              <strong>Lash &amp; Brow Studio</strong><br>
+              450 Luxury Promenade, Suite 200<br>
+              Beverly Hills, CA 90210
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <div>
+              <a href="tel:+919876543210" class="text-white text-decoration-none">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <div>
+              <a href="mailto:hello@lashbrowstudio.com" class="text-white text-decoration-none">hello@lashbrowstudio.com</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-clock"></i>
+            <div>
+              Tue – Sat: 9:00 AM – 7:00 PM<br>
+              Sunday: 10:00 AM – 4:00 PM<br>
+              Monday: Closed
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="mb-0 text-center text-md-start">
+          &copy; 2026 Lash &amp; Brow Studio. All rights reserved. Crafted for beauty connoisseurs.
+        </p>
+        <div class="text-muted-custom small">
+          <span>Hygienic</span> &bull; <span>Cruelty-Free</span> &bull; <span>Bespoke Artistry</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top floating button -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top of page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

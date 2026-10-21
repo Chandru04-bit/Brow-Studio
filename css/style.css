@@ -434,6 +434,78 @@ p {
   width: 65%;
 }
 
+/* --------------------------------------------------------------------------
+   Navbar Dropdown Menu (Home 1 / Home 2)
+   -------------------------------------------------------------------------- */
+.navbar-luxury .dropdown-toggle::after {
+  display: none !important; /* Hide default Bootstrap caret in favor of luxury animated chevron */
+}
+
+.navbar-luxury .nav-dropdown-icon {
+  display: inline-block;
+  font-size: 0.7rem;
+  margin-left: 0.35rem;
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  vertical-align: 0.05em;
+  color: var(--color-dusty-rose-dark);
+}
+
+[dir="rtl"] .navbar-luxury .nav-dropdown-icon {
+  margin-left: 0;
+  margin-right: 0.35rem;
+}
+
+.navbar-luxury .dropdown.show .nav-dropdown-icon,
+.navbar-luxury .dropdown-toggle[aria-expanded="true"] .nav-dropdown-icon,
+.navbar-luxury .nav-item.dropdown:hover .nav-dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu-luxury {
+  background-color: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 0.6rem 0.5rem;
+  min-width: 175px;
+  margin-top: 0.5rem;
+  transition: var(--transition-fast);
+  z-index: 1050;
+}
+
+.dropdown-menu-luxury .dropdown-item {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  padding: 0.55rem 0.95rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-menu-luxury .dropdown-item:hover,
+.dropdown-menu-luxury .dropdown-item:focus {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-dusty-rose-dark);
+  padding-left: 1.15rem;
+}
+
+[dir="rtl"] .dropdown-menu-luxury .dropdown-item:hover,
+[dir="rtl"] .dropdown-menu-luxury .dropdown-item:focus {
+  padding-left: 0.95rem;
+  padding-right: 1.15rem;
+}
+
+.dropdown-menu-luxury .dropdown-item.active,
+.dropdown-menu-luxury .dropdown-item:active {
+  background-color: var(--color-champagne-gold-light);
+  color: var(--color-gold-text);
+  font-weight: 600;
+}
+
 /* Navbar Toggler */
 .navbar-toggler {
   border: 1px solid var(--color-border);
@@ -500,6 +572,31 @@ p {
     flex-shrink: 0;
     z-index: 5;
     position: relative;
+  }
+
+  /* Desktop Dropdown Hover Open */
+  .navbar-luxury .nav-item.dropdown:hover .dropdown-menu-luxury {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .navbar-luxury .nav-item.dropdown .dropdown-menu-luxury {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    pointer-events: none;
+  }
+
+  .navbar-luxury .nav-item.dropdown.show .dropdown-menu-luxury {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
 }
 

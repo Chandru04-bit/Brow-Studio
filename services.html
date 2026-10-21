@@ -62,8 +62,14 @@
         <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
           <!-- Center Navigation Links -->
           <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-luxury" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="services.html">Services</a>
@@ -237,13 +243,13 @@
           <!-- 1. Classic Lash Extensions -->
           <div class="col-lg-6" id="classicLashes">
             <div class="lash-service-card">
-              <div class="row g-4">
-                <div class="col-sm-5 lash-service-img-col">
+              <div class="row g-3 g-md-4 align-items-stretch">
+                <div class="col-md-4 col-sm-5 lash-service-img-col">
                   <div class="lash-service-img-wrap">
                     <img src="assets/images/services/classic-lashes.jpg" alt="Classic lash extension set" class="img-fluid" loading="lazy">
                   </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-8 col-sm-7 d-flex flex-column">
                   <div class="lash-service-content">
                     <div>
                       <div class="lash-service-header">
@@ -275,13 +281,13 @@
           <!-- 2. Hybrid Lash Extensions -->
           <div class="col-lg-6" id="hybridLashes">
             <div class="lash-service-card">
-              <div class="row g-4">
-                <div class="col-sm-5 lash-service-img-col">
+              <div class="row g-3 g-md-4 align-items-stretch">
+                <div class="col-md-4 col-sm-5 lash-service-img-col">
                   <div class="lash-service-img-wrap">
                     <img src="assets/images/services/hybrid-lashes.jpg" alt="Hybrid textured lash extension set" class="img-fluid" loading="lazy">
                   </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-8 col-sm-7 d-flex flex-column">
                   <div class="lash-service-content">
                     <div>
                       <div class="lash-service-header">
@@ -313,13 +319,13 @@
           <!-- 3. Volume Lash Extensions -->
           <div class="col-lg-6" id="volumeLashes">
             <div class="lash-service-card">
-              <div class="row g-4">
-                <div class="col-sm-5 lash-service-img-col">
+              <div class="row g-3 g-md-4 align-items-stretch">
+                <div class="col-md-4 col-sm-5 lash-service-img-col">
                   <div class="lash-service-img-wrap">
                     <img src="assets/images/services/volume-lashes.jpg" alt="Handcrafted Russian volume lash set" class="img-fluid" loading="lazy">
                   </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-8 col-sm-7 d-flex flex-column">
                   <div class="lash-service-content">
                     <div>
                       <div class="lash-service-header">
@@ -351,13 +357,13 @@
           <!-- 4. Wispy & Custom Lash Sets -->
           <div class="col-lg-6" id="wispyLashes">
             <div class="lash-service-card">
-              <div class="row g-4">
-                <div class="col-sm-5 lash-service-img-col">
+              <div class="row g-3 g-md-4 align-items-stretch">
+                <div class="col-md-4 col-sm-5 lash-service-img-col">
                   <div class="lash-service-img-wrap">
                     <img src="assets/images/services/wispy-lashes.jpg" alt="Wispy Kim K style custom lash mapping" class="img-fluid" loading="lazy">
                   </div>
                 </div>
-                <div class="col-sm-7">
+                <div class="col-md-8 col-sm-7 d-flex flex-column">
                   <div class="lash-service-content">
                     <div>
                       <div class="lash-service-header">
@@ -535,7 +541,7 @@
 
           <!-- Brow 4 -->
           <div class="col-lg-3 col-md-6">
-            <div class="card-luxury p-4 h-100 border-2 border-warning">
+            <div class="card-luxury p-4 h-100">
               <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
                 <img src="assets/images/services/brow-shaping-profile.jpg" alt="Sculpted Brow Lamination and Tint Full Transformation" class="img-fluid w-100 h-100 object-fit-cover" loading="lazy" width="300" height="169">
               </div>
@@ -615,7 +621,7 @@
     <!-- ========================================================================
          SECTION 7: STUDIO ADD-ONS & MAINTENANCE MENU
          ======================================================================== -->
-    <section class="section-padding bg-ivory" aria-labelledby="addonsHeading">
+    <section class="section-padding bg-ivory session-addons-section" aria-labelledby="addonsHeading">
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">STUDIO ADD-ONS</span>
@@ -626,8 +632,8 @@
           </p>
         </div>
 
-        <div class="row g-4 justify-content-center">
-          <div class="col-lg-10">
+        <div class="row g-4 justify-content-center session-addons-layout">
+          <div class="col-lg-10 session-addons-column">
             <div class="card-luxury p-4">
               <div class="pricing-item-row">
                 <div>

@@ -62,8 +62,14 @@
         <div class="collapse navbar-collapse" id="navbarLuxuryCollapse">
           <!-- Center Navigation Links -->
           <ul class="navbar-nav navbar-nav-center mx-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Home <i class="bi bi-chevron-down nav-dropdown-icon"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-luxury" aria-labelledby="homeDropdown">
+                <li><a class="dropdown-item active" href="index.html">Home 1</a></li>
+                <li><a class="dropdown-item" href="index2.html">Home 2</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.html">Services</a>
@@ -253,7 +259,7 @@
     <!-- ========================================================================
          SECTION 3: FEATURED SERVICES
          ======================================================================== -->
-    <section class="section-padding bg-ivory" aria-labelledby="featuredHeading">
+    <section id="services" class="section-padding bg-ivory" aria-labelledby="featuredHeading">
       <div class="container">
         <div class="section-header text-center max-w-700 mx-auto">
           <span class="eyebrow">SIGNATURE TREATMENTS</span>
@@ -264,21 +270,21 @@
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 featured-services-row">
           <!-- Card 1: Classic Lash Extensions -->
-          <div class="col-lg-3 col-md-6">
-            <article class="card-luxury">
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <article class="card-luxury w-100">
               <div class="service-card-img-wrap">
                 <img src="assets/images/services/classic-lashes.jpg" alt="Classic natural lash extensions" loading="lazy">
                 <span class="service-badge service-badge-neutral">Natural</span>
               </div>
               <div class="service-card-body">
                 <div class="service-card-price">From ₹120 <small class="text-muted-custom fs-6 fw-normal">/ set</small></div>
-                <h3 class="h4 font-serif">Classic Lash Extensions</h3>
+                <h3 class="service-card-title h4 font-serif">Classic Lash Extensions</h3>
                 <div class="service-card-meta">
                   <span><i class="bi bi-clock me-1"></i> 90–105 Mins</span>
                 </div>
-                <p class="text-muted-custom small flex-grow-1">
+                <p class="service-card-desc text-muted-custom small flex-grow-1">
                   Individual single lash extensions applied 1:1 on each natural lash for an effortless, mascara-free everyday glow.
                 </p>
                 <div class="service-card-footer">
@@ -290,19 +296,19 @@
           </div>
 
           <!-- Card 2: Volume Lash Extensions -->
-          <div class="col-lg-3 col-md-6">
-            <article class="card-luxury position-relative">
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <article class="card-luxury position-relative w-100">
               <div class="service-card-img-wrap">
                 <img src="assets/images/services/volume-lashes.jpg" alt="Fluffy volume lash extensions" loading="lazy">
                 <span class="service-badge service-badge-popular">Popular</span>
               </div>
               <div class="service-card-body">
                 <div class="service-card-price">From ₹160 <small class="text-muted-custom fs-6 fw-normal">/ set</small></div>
-                <h3 class="h4 font-serif">Volume Lash Extensions</h3>
+                <h3 class="service-card-title h4 font-serif">Volume Lash Extensions</h3>
                 <div class="service-card-meta">
                   <span><i class="bi bi-clock me-1"></i> 120 Mins</span>
                 </div>
-                <p class="text-muted-custom small flex-grow-1">
+                <p class="service-card-desc text-muted-custom small flex-grow-1">
                   Handcrafted ultra-fine fans (3D–6D) creating density, texture, and a glamorous, fluttery, voluminous lash line.
                 </p>
                 <div class="service-card-footer">
@@ -314,19 +320,19 @@
           </div>
 
           <!-- Card 3: Lash Lift & Tint -->
-          <div class="col-lg-3 col-md-6">
-            <article class="card-luxury">
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <article class="card-luxury w-100">
               <div class="service-card-img-wrap">
                 <img src="assets/images/services/lash-lift.jpg" alt="Natural lifted and tinted eyelashes" loading="lazy">
                 <span class="service-badge service-badge-neutral">Low-Care</span>
               </div>
               <div class="service-card-body">
                 <div class="service-card-price">From ₹95 <small class="text-muted-custom fs-6 fw-normal">/ session</small></div>
-                <h3 class="h4 font-serif">Lash Lift &amp; Tint</h3>
+                <h3 class="service-card-title h4 font-serif">Lash Lift &amp; Tint</h3>
                 <div class="service-card-meta">
                   <span><i class="bi bi-clock me-1"></i> 60 Mins</span>
                 </div>
-                <p class="text-muted-custom small flex-grow-1">
+                <p class="service-card-desc text-muted-custom small flex-grow-1">
                   Perms your natural lashes upwards from root to tip, paired with deep midnight black tint for 6–8 weeks of curl.
                 </p>
                 <div class="service-card-footer">
@@ -338,19 +344,19 @@
           </div>
 
           <!-- Card 4: Brow Lamination & Styling -->
-          <div class="col-lg-3 col-md-6">
-            <article class="card-luxury">
+          <div class="col-12 col-md-6 col-lg-3 d-flex">
+            <article class="card-luxury w-100">
               <div class="service-card-img-wrap">
                 <img src="assets/images/services/brow-lamination.jpg" alt="Sculpted laminated eyebrows" loading="lazy">
                 <span class="service-badge service-badge-neutral">Sculpted</span>
               </div>
               <div class="service-card-body">
                 <div class="service-card-price">From ₹85 <small class="text-muted-custom fs-6 fw-normal">/ session</small></div>
-                <h3 class="h4 font-serif">Brow Lamination &amp; Styling</h3>
+                <h3 class="service-card-title h4 font-serif">Brow Lamination &amp; Styling</h3>
                 <div class="service-card-meta">
                   <span><i class="bi bi-clock me-1"></i> 50 Mins</span>
                 </div>
-                <p class="text-muted-custom small flex-grow-1">
+                <p class="service-card-desc text-muted-custom small flex-grow-1">
                   Relaxes and restructures brow hairs into a fuller, feather-like brushed-up shape with custom shaping &amp; tinting.
                 </p>
                 <div class="service-card-footer">
@@ -470,7 +476,7 @@
     <!-- ========================================================================
          SECTION 5: WHY CHOOSE OUR STUDIO?
          ======================================================================== -->
-    <section class="section-padding bg-ivory" aria-labelledby="whyChooseHeading">
+    <section class="section-padding bg-ivory commitment-section" aria-labelledby="whyChooseHeading">
       <div class="container">
         <div class="section-header text-center">
           <span class="eyebrow">OUR COMMITMENT</span>
@@ -481,7 +487,7 @@
           </p>
         </div>
 
-        <div class="row g-4">
+        <div class="row g-4 commitment-grid">
           <!-- Benefit 1 -->
           <div class="col-lg-4 col-md-6">
             <div class="feature-box">

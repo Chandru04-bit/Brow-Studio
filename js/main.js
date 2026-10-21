@@ -176,8 +176,8 @@ function initMobileNavbar() {
     });
   }
 
-  // Close when clicking any navigation link or CTA button inside drawer
-  const navLinks = navbarCollapse.querySelectorAll('.navbar-nav .nav-link, .navbar-nav-cta .btn-luxury');
+  // Close when clicking any navigation link (except dropdown-toggle) or CTA button inside drawer
+  const navLinks = navbarCollapse.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle), .dropdown-menu .dropdown-item, .navbar-nav-cta .btn-luxury');
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       closeMobileMenu();
@@ -246,15 +246,35 @@ function initActiveNavLink() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   const currentHash = window.location.hash;
 
+  // Handle Home dropdown items active state
+  const homeDropdown = document.getElementById('homeDropdown');
+  const home1Item = document.querySelector('.dropdown-menu-luxury a[href="index.html"]');
+  const home2Item = document.querySelector('.dropdown-menu-luxury a[href="index2.html"]');
+
+  if (currentPath === '' || currentPath === 'index.html') {
+    if (homeDropdown) homeDropdown.classList.add('active');
+    if (home1Item) home1Item.classList.add('active');
+    if (home2Item) home2Item.classList.remove('active');
+  } else if (currentPath === 'index2.html') {
+    if (homeDropdown) homeDropdown.classList.add('active');
+    if (home2Item) home2Item.classList.add('active');
+    if (home1Item) home1Item.classList.remove('active');
+  } else {
+    if (homeDropdown) homeDropdown.classList.remove('active');
+    if (home1Item) home1Item.classList.remove('active');
+    if (home2Item) home2Item.classList.remove('active');
+  }
+
   navLinks.forEach(link => {
+    // Skip dropdown toggle itself (handled above)
+    if (link.classList.contains('dropdown-toggle')) return;
+
     const href = link.getAttribute('href');
     if (!href) return;
 
     if (currentHash && href.includes(currentHash)) {
       link.classList.add('active');
     } else if (!currentHash && href === currentPath) {
-      link.classList.add('active');
-    } else if (!currentHash && (currentPath === '' || currentPath === 'index.html') && href === 'index.html') {
       link.classList.add('active');
     } else {
       if (!href.startsWith('#')) {
