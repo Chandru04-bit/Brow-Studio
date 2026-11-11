@@ -127,10 +127,10 @@
   <main id="mainContent">
 
     <!-- ========================================================================
-         SECTION 1: CONTACT HERO & BREADCRUMBS
+         SECTION 1: CONTACT HERO (UNIFIED LUXURY HERO)
          ======================================================================== -->
-    <section class="section-padding bg-ivory pt-5 mt-5" aria-labelledby="contactHeroHeading">
-      <div class="container pt-3">
+    <section class="subpage-hero-luxury" aria-labelledby="contactHeroHeading">
+      <div class="container subpage-hero-container">
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="breadcrumb-luxury">
           <ol class="breadcrumb">
@@ -139,36 +139,45 @@
           </ol>
         </nav>
 
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 subpage-hero-content">
             <span class="eyebrow"><i class="bi bi-calendar2-heart me-1 text-gold"></i> APPOINTMENT CONCIERGE</span>
-            <h1 id="contactHeroHeading" class="mb-3">Let's Create Your Perfect Look</h1>
+            <h1 id="contactHeroHeading" class="subpage-hero-title">Let's Create Your Perfect Look</h1>
             <div class="divider-gold"></div>
-            <p class="lead-luxury mb-4">
+            <p class="lead-luxury mb-2">
               Schedule your luxury lash extensions, lash lift, or sculpted brow appointment. Select your preferred date, time, and styling preferences below.
             </p>
-            <div class="d-flex flex-wrap gap-4 text-muted-custom small">
-              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Instant Booking Preview</div>
-              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> 24h Concierge Confirmation</div>
-              <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Private Treatment Suites</div>
+
+            <!-- Trust Pills -->
+            <div class="subpage-hero-pills">
+              <span class="subpage-hero-pill"><i class="bi bi-check-circle-fill"></i> Instant Booking Preview</span>
+              <span class="subpage-hero-pill"><i class="bi bi-bell"></i> 24h Concierge Confirmation</span>
+              <span class="subpage-hero-pill"><i class="bi bi-door-closed"></i> Private Luxury Suites</span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#bookingCard" class="btn-luxury btn-luxury-primary">
+                Reserve Your Suite <i class="bi bi-arrow-down ms-1"></i>
+              </a>
+              <a href="tel:+919876543210" class="btn-luxury btn-luxury-secondary">
+                <i class="bi bi-telephone me-1"></i> Call Concierge
+              </a>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="card-luxury p-4 bg-blush shadow-sm">
-              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
-                <img src="assets/images/about/about-studio.jpg" alt="Lash &amp; Brow Studio Sanctuary Suite" class="w-100 h-100 object-fit-cover">
+
+          <div class="col-lg-6">
+            <div class="subpage-hero-visual">
+              <div class="subpage-hero-image-card">
+                <img src="assets/images/contact/concierge-welcome.jpg" alt="Lash &amp; Brow Studio Sanctuary Reception and Private Suites" class="img-fluid" width="1200" height="900" loading="eager">
               </div>
-              <h2 class="h5 font-serif mb-3">Concierge Assistance</h2>
-              <p class="text-muted-custom small mb-3">
-                Have questions regarding patch tests, sensitive eyes, or existing foreign sets? Our client coordinator is happy to assist you directly.
-              </p>
-              <div class="d-flex align-items-center gap-3">
-                <a href="tel:+919876543210" class="btn-luxury btn-luxury-outline btn-luxury-sm">
-                  <i class="bi bi-telephone me-1"></i> Call Concierge
-                </a>
-                <a href="mailto:hello@lashbrowstudio.com" class="btn-luxury btn-luxury-secondary btn-luxury-sm">
-                  <i class="bi bi-envelope me-1"></i> Email Studio
-                </a>
+              <div class="subpage-hero-badge">
+                <div class="subpage-hero-badge-icon">
+                  <i class="bi bi-headset"></i>
+                </div>
+                <div>
+                  <div class="subpage-hero-badge-title">VIP Concierge Desk</div>
+                  <div class="subpage-hero-badge-subtitle">Direct hotline &bull; Instant confirmation</div>
+                </div>
               </div>
             </div>
           </div>
@@ -552,7 +561,7 @@
             450 Luxury Promenade, Suite 200 &bull; Beverly Hills, CA 90210 &bull; Complimentary Valet &amp; Subterranean Parking
           </p>
           <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 mt-3">
-            <a href="tel:+919876543210" class="btn-luxury btn-luxury-outline btn-luxury-sm">
+            <a href="tel:+919876543210" class="btn-luxury btn-luxury-secondary btn-luxury-sm">
               <i class="bi bi-telephone me-1"></i> +91 98765 43210
             </a>
             <a href="https://maps.google.com/?q=Beverly+Hills,+CA+90210" target="_blank" rel="noopener" class="btn-luxury btn-luxury-primary btn-luxury-sm">
@@ -579,23 +588,81 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 6: EMERGENCY INFILLS & SAME-DAY WAITLIST FAQ
+         SECTION 6: EMERGENCY INFILLS & PRIORITY HOTLINE (VIP VALET & STANDBY LOUNGE)
          ======================================================================== -->
-    <section class="section-padding bg-blush" aria-labelledby="waitlistHeading">
+    <section class="final-section-luxury final-sec-contact" aria-labelledby="waitlistHeading">
       <div class="container">
-        <div class="card-luxury p-4 p-lg-5 bg-white">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-8">
-              <span class="eyebrow eyebrow-rose"><i class="bi bi-lightning-charge me-1"></i> TIME-SENSITIVE BOOKING</span>
-              <h2 id="waitlistHeading" class="h3 font-serif mb-2">Need a Same-Day Appointment or Urgent Fix?</h2>
-              <p class="text-muted-custom mb-0">
-                Attending a gala, wedding, or sudden flight? While our standard reservations fill 1–2 weeks in advance, we keep 2 daily priority slots on reserve for emergency foreign fills and touch-ups.
-              </p>
+        <div class="final-card-visual-wrap">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Visual Side -->
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="contact-concierge-visual-card">
+                <img src="assets/images/contact/concierge-welcome.jpg" alt="Master lash artist consulting with client in private atelier" class="img-fluid" loading="lazy" width="800" height="600">
+                <div class="final-card-img-overlay">
+                  <span class="badge bg-white text-charcoal border shadow-sm px-2 py-1 small align-self-start mb-2">
+                    <span class="live-dot-pulse me-1"></span> Priority Concierge Active
+                  </span>
+                  <h3 class="final-card-overlay-title">Beverly Hills Atelier Sanctuary</h3>
+                  <p class="final-card-overlay-desc">Private concierge reception &bull; Validated valet parking</p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="tel:+919876543210" class="btn-luxury btn-luxury-primary">
-                <i class="bi bi-telephone-outbound me-2"></i> Call Priority Line
-              </a>
+
+            <!-- Right Content Side -->
+            <div class="col-lg-7 order-lg-2 order-1">
+              <div class="final-card-content-side">
+                <span class="eyebrow text-gold"><i class="bi bi-lightning-charge-fill me-1"></i> SAME-DAY &amp; PRIORITY ASSISTANCE</span>
+                <h2 id="waitlistHeading" class="final-card-title">Need an Urgent Slot, Emergency Fill, or Flight Touch-Up?</h2>
+                <div class="divider-gold mb-3"></div>
+                <p class="final-card-desc mb-3">
+                  Attending a gala, red-carpet event, or flight today? While our standard reservations book 1–2 weeks in advance, we keep dedicated emergency standby slots on reserve daily for same-day travel clients and foreign infill assessments.
+                </p>
+
+                <!-- Concierge Specialist Host Card -->
+                <div class="contact-host-card">
+                  <div class="contact-host-avatar">
+                    <img src="assets/images/team/expert-elena.jpg" alt="Elena Vance, Lead Concierge Host and Master Stylist" loading="lazy" width="60" height="60">
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
+                      <strong class="font-serif fs-6">Elena Vance &bull; Lead Concierge Host</strong>
+                      <span class="badge bg-white text-charcoal border small"><span class="live-dot-pulse me-1"></span> Online Now</span>
+                    </div>
+                    <small class="text-muted-custom d-block" style="font-size: 0.78rem;">
+                      Direct hotline &bull; Immediate emergency standby &amp; foreign fill assistance
+                    </small>
+                  </div>
+                </div>
+
+                <!-- Valet Parking Notice Card -->
+                <div class="contact-valet-note-box">
+                  <i class="bi bi-geo-alt-fill text-gold fs-5"></i>
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <strong>Complimentary Valet Arrival</strong>
+                      <span class="badge badge-gold px-2 py-0 small"><i class="bi bi-ticket-perforated-fill text-dark me-1"></i> Validated Pass</span>
+                    </div>
+                    <span>Pull directly into our private motor court at 9650 Wilshire Blvd for 2-hour validated valet parking.</span>
+                  </div>
+                </div>
+
+                <!-- Priority Hotline Actions -->
+                <div class="contact-hotline-action-grid">
+                  <a href="tel:+919876543210" class="btn-luxury btn-luxury-primary">
+                    <i class="bi bi-telephone-outbound me-2"></i> Call Priority Line: +91 98765 43210
+                  </a>
+                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="btn-luxury btn-luxury-secondary">
+                    <i class="bi bi-whatsapp me-2"></i> WhatsApp Priority
+                  </a>
+                  <a href="mailto:hello@lashbrowstudio.com" class="btn-luxury btn-luxury-secondary">
+                    <i class="bi bi-envelope me-1"></i> Urgent Email
+                  </a>
+                </div>
+
+                <small class="text-muted-custom d-block mt-2">
+                  <i class="bi bi-clock-history me-1"></i> Average concierge response under 15 minutes during salon operating hours.
+                </small>
+              </div>
             </div>
           </div>
         </div>
@@ -759,7 +826,7 @@
           </div>
         </div>
         <div class="modal-footer justify-content-between">
-          <button type="button" class="btn-luxury btn-luxury-outline btn-luxury-sm" onclick="window.print()">
+          <button type="button" class="btn-luxury btn-luxury-secondary btn-luxury-sm" onclick="window.print()">
             <i class="bi bi-printer me-1"></i> Print / Save Summary
           </button>
           <button type="button" class="btn-luxury btn-luxury-primary btn-luxury-sm" data-bs-dismiss="modal">

@@ -131,24 +131,59 @@
   <main id="mainContent">
 
     <!-- ========================================================================
-         PAGE HERO BANNER & BREADCRUMB
+         PAGE HERO (UNIFIED LUXURY HERO)
          ======================================================================== -->
-    <section class="section-padding bg-ivory pt-5 mt-5 border-bottom" aria-labelledby="galleryHeroHeading">
-      <div class="container pt-4">
-        <div class="row justify-content-center text-center">
-          <div class="col-lg-9 col-xl-8">
-            <nav aria-label="Breadcrumb" class="mb-3">
-              <ol class="breadcrumb justify-content-center small text-muted-custom mb-2">
-                <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-muted-custom">Home</a></li>
-                <li class="breadcrumb-item active text-gold fw-semibold" aria-current="page">Artistry Lookbook</li>
-              </ol>
-            </nav>
+    <section class="subpage-hero-luxury" aria-labelledby="galleryHeroHeading">
+      <div class="container subpage-hero-container">
+        <!-- Breadcrumbs -->
+        <nav aria-label="Breadcrumb" class="breadcrumb-luxury">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artistry Lookbook</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 subpage-hero-content">
             <span class="eyebrow"><i class="bi bi-stars me-1 text-gold"></i> COUTURE PORTFOLIO</span>
-            <h1 id="galleryHeroHeading" class="section-title mb-3">The Artistry Lookbook</h1>
-            <div class="divider-gold mx-auto"></div>
-            <p class="section-subtitle mt-3">
+            <h1 id="galleryHeroHeading" class="subpage-hero-title">The Artistry Lookbook</h1>
+            <div class="divider-gold"></div>
+            <p class="lead-luxury mb-2">
               Explore our gallery of bespoke eyelash extensions, keratin lash lifts, and sculpted brow transformations. Every set is individually mapped to celebrate your eye geometry and natural beauty.
             </p>
+
+            <!-- Trust Pills -->
+            <div class="subpage-hero-pills">
+              <span class="subpage-hero-pill"><i class="bi bi-images"></i> 150+ Verified Transformations</span>
+              <span class="subpage-hero-pill"><i class="bi bi-camera"></i> Zero-Filter Macro Artistry</span>
+              <span class="subpage-hero-pill"><i class="bi bi-gem"></i> 5 Bespoke Style Maps</span>
+            </div>
+
+            <div class="d-flex flex-wrap gap-3">
+              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                Book A Featured Look <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              <a href="#lookbookFilterHeading" class="btn-luxury btn-luxury-secondary">
+                Filter Collections
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="subpage-hero-visual">
+              <div class="subpage-hero-image-card">
+                <img src="assets/images/hero/hero-lash.jpg" alt="Macro detail of luxury featherweight Russian volume lash artistry" class="img-fluid" width="1200" height="900" loading="eager">
+              </div>
+              <div class="subpage-hero-badge">
+                <div class="subpage-hero-badge-icon">
+                  <i class="bi bi-camera-fill"></i>
+                </div>
+                <div>
+                  <div class="subpage-hero-badge-title">150+ Couture Transformations</div>
+                  <div class="subpage-hero-badge-subtitle">Zero filter &bull; 100% Authentic Client Results</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -535,25 +570,89 @@
     </section>
 
     <!-- ========================================================================
-         CTA PROMOTIONAL BANNER
+         LOOKBOOK INSPIRATION SHOWCASE (BEFORE/AFTER TRANSFORMATION & INSP-MATCHING)
          ======================================================================== -->
-    <section class="section-padding bg-ivory" aria-labelledby="ctaGalleryHeading">
+    <section class="final-section-luxury final-sec-gallery" aria-labelledby="ctaGalleryHeading">
       <div class="container">
-        <div class="cta-banner-luxury text-center">
-          <div class="row justify-content-center">
-            <div class="col-lg-9 col-xl-8">
-              <span class="badge badge-gold mb-3 text-uppercase">Bespoke Beauty Awaits</span>
-              <h2 id="ctaGalleryHeading" class="display-6 font-serif fw-bold text-white mb-3">Inspired by a Look in Our Gallery?</h2>
-              <p class="text-white-50 lead mb-4">
-                Bring your favorite reference photo to your appointment. Our master lash stylists will tailor the curl, diameter, and mapping precisely to your eyes.
-              </p>
-              <div class="d-flex flex-wrap justify-content-center gap-3">
-                <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
-                  <i class="bi bi-calendar2-heart me-1"></i> Book Your Session
-                </a>
-                <a href="pricing.html" class="btn-luxury btn-luxury-outline-white">
-                  View Service Pricing Menu
-                </a>
+        <div class="final-card-visual-wrap">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Side-by-Side Before/After Visual Side -->
+            <div class="col-lg-6 order-lg-1 order-2">
+              <div class="gallery-split-compare-wrap">
+                <!-- Before Frame -->
+                <div class="gallery-split-frame">
+                  <img src="assets/images/before-after/lash-before-1.jpg" alt="Client lashes before bespoke extension application" loading="lazy" width="400" height="600">
+                  <span class="gallery-split-badge"><i class="bi bi-camera me-1"></i> Before: Natural &amp; Sparse</span>
+                </div>
+                <!-- Divider Gold Line -->
+                <div class="gallery-split-divider-line"></div>
+                <!-- After Frame -->
+                <div class="gallery-split-frame">
+                  <img src="assets/images/before-after/lash-after-1.jpg" alt="Client lashes after couture Russian volume transformation" loading="lazy" width="400" height="600">
+                  <span class="gallery-split-badge"><i class="bi bi-stars text-gold me-1"></i> After: 3D Hybrid Fox Eye</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Inspiration Matching Content Side -->
+            <div class="col-lg-6 order-lg-2 order-1">
+              <div class="final-card-content-side">
+                <span class="eyebrow text-gold"><i class="bi bi-camera-fill me-1"></i> BRING YOUR INSPIRATION</span>
+                <h2 id="ctaGalleryHeading" class="final-card-title">Inspired by a Look? Bring Any Photo to Your Suite</h2>
+                <div class="divider-gold mb-3"></div>
+                <p class="final-card-desc mb-3">
+                  Save your favorite screenshot from our lookbook, Instagram, or Pinterest. During your consultation, our master artists will precisely translate the curl, diameter, and fan graduation to complement your eyelid geometry.
+                </p>
+
+                <!-- Inspo Reference Visual Micro-Card -->
+                <div class="services-diag-blueprint-card mb-3 py-2 px-3">
+                  <div class="wayfinder-thumb">
+                    <img src="assets/images/lash-styles/cat-eye-style.jpg" alt="Client inspo photo reference cat eye style" loading="lazy" width="70" height="70">
+                  </div>
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <span class="badge badge-gold px-2 py-0 small"><i class="bi bi-pin-angle-fill text-dark me-1"></i> Lookbook Match</span>
+                      <small class="text-gold fw-semibold">Photo-to-Eye Translation</small>
+                    </div>
+                    <strong class="d-block font-serif fs-6">Siren Cat-Eye &bull; Custom Curl Mapping</strong>
+                    <small class="text-muted-custom d-block" style="font-size: 0.76rem;">
+                      Bring any look—we calculate curvature &amp; weight limits for 100% damage-free replication.
+                    </small>
+                  </div>
+                </div>
+
+                <!-- Popular Lash Style Tags with Visual Badges -->
+                <div class="gallery-curl-tags-strip mb-3">
+                  <span class="gallery-curl-tag"><span class="curl-shape-badge">C</span> Natural Lift</span>
+                  <span class="gallery-curl-tag"><span class="curl-shape-badge">CC</span> Open Eye</span>
+                  <span class="gallery-curl-tag"><span class="curl-shape-badge">D</span> Dramatic Glam</span>
+                  <span class="gallery-curl-tag"><span class="curl-shape-badge">L</span> Fox Eyelift</span>
+                  <span class="gallery-curl-tag"><i class="bi bi-stars text-gold me-1"></i> 7mm–16mm</span>
+                </div>
+
+                <ul class="final-perks-list">
+                  <li class="final-perk-item">
+                    <span class="final-perk-icon"><i class="bi bi-check2"></i></span>
+                    <span>Weight-calibrated fans protecting long-term natural lash health</span>
+                  </li>
+                  <li class="final-perk-item">
+                    <span class="final-perk-icon"><i class="bi bi-check2"></i></span>
+                    <span>Custom lengths from 7mm inner corner to 16mm outer flick</span>
+                  </li>
+                  <li class="final-perk-item">
+                    <span class="final-perk-icon"><i class="bi bi-check2"></i></span>
+                    <span>Complimentary spoolie brush &amp; styling consultation</span>
+                  </li>
+                </ul>
+
+                <div class="final-card-actions">
+                  <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                    <i class="bi bi-calendar2-heart me-1"></i> Book Your Session
+                  </a>
+                  <a href="pricing.html" class="btn-luxury btn-luxury-secondary">
+                    View Pricing Menu
+                  </a>
+                </div>
               </div>
             </div>
           </div>

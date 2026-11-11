@@ -127,10 +127,10 @@
   <main id="mainContent">
 
     <!-- ========================================================================
-         SECTION 1: PRICING PAGE HERO & BREADCRUMBS
+         SECTION 1: PRICING PAGE HERO (UNIFIED LUXURY HERO)
          ======================================================================== -->
-    <section class="section-padding bg-ivory pt-5 mt-5" aria-labelledby="pricingHeroHeading">
-      <div class="container pt-3">
+    <section class="subpage-hero-luxury" aria-labelledby="pricingHeroHeading">
+      <div class="container subpage-hero-container">
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="breadcrumb-luxury">
           <ol class="breadcrumb">
@@ -139,38 +139,75 @@
           </ol>
         </nav>
 
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 subpage-hero-content">
+            <!-- Social Proof Rating Cluster -->
+            <div class="subpage-hero-proof">
+              <div class="proof-avatar-group">
+                <img src="assets/images/testimonials/client-2.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+                <img src="assets/images/testimonials/client-3.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+                <img src="assets/images/testimonials/client-1.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+              </div>
+              <div class="proof-text">
+                <span class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span>4.99 / 5 Rating (1,800+ Reviews)</span>
+              </div>
+            </div>
+
             <span class="eyebrow"><i class="bi bi-stars me-1 text-gold"></i> TRANSPARENT INVESTMENT</span>
-            <h1 id="pricingHeroHeading" class="mb-3">Our Service Menu &amp; Pricing</h1>
+            <h1 id="pricingHeroHeading" class="subpage-hero-title">Our Service Menu &amp; Pricing</h1>
             <div class="divider-gold"></div>
-            <p class="lead-luxury mb-4">
+            <p class="lead-luxury mb-2">
               We pride ourselves on transparent, all-inclusive pricing. Every set is tailored with premium synthetic silk, formaldehyde-free adhesive, soothing eye gel pads, and a complimentary aftercare brush.
             </p>
+
+            <!-- Trust Pills -->
+            <div class="subpage-hero-pills">
+              <span class="subpage-hero-pill"><i class="bi bi-shield-check"></i> 3-Day Satisfaction Guarantee</span>
+              <span class="subpage-hero-pill"><i class="bi bi-currency-dollar"></i> All-Inclusive • No Hidden Fees</span>
+              <span class="subpage-hero-pill"><i class="bi bi-gift"></i> Complimentary Aftercare Kit</span>
+            </div>
+
             <div class="d-flex flex-wrap gap-3">
               <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
-                Book Your Appointment <i class="bi bi-arrow-right"></i>
+                Book Your Appointment <i class="bi bi-arrow-right ms-1"></i>
               </a>
               <a href="#policies" class="btn-luxury btn-luxury-secondary">
                 Studio Policies
               </a>
             </div>
           </div>
-          <div class="col-lg-5">
-            <div class="card-luxury p-3 bg-blush border-2 border-warning shadow-md">
-              <div class="ratio ratio-16x9 rounded overflow-hidden mb-3">
-                <img src="assets/images/pricing/pricing-suite.jpg" alt="Lash and Brow Studio Private Luxury Treatment Suite" class="img-fluid w-100 h-100 object-fit-cover" loading="eager" width="600" height="338">
-              </div>
-              <div class="d-flex align-items-center gap-3 mb-2">
-                <i class="bi bi-shield-check fs-2 text-gold"></i>
-                <div>
-                  <h3 class="h5 font-serif mb-0">Our 3-Day Satisfaction Guarantee</h3>
-                  <small class="text-muted-custom">Complimentary touch-up policy</small>
+
+          <div class="col-lg-6">
+            <div class="subpage-hero-visual-wrap">
+              <div class="subpage-hero-visual">
+                <!-- Decorative Gold Accent Frame -->
+                <div class="subpage-hero-frame"></div>
+
+                <!-- Secondary Floating Inset Feature Card -->
+                <div class="subpage-hero-inset-card">
+                  <div class="subpage-hero-inset-img">
+                    <img src="assets/images/services/lash-aftercare-products.jpg" alt="Complimentary luxury lash aftercare wand and foaming wash" loading="eager" width="150" height="90">
+                  </div>
+                  <div class="subpage-hero-inset-caption">Aftercare Included</div>
+                </div>
+
+                <!-- Main Hero Image Card -->
+                <div class="subpage-hero-image-card">
+                  <img src="assets/images/pricing/pricing-suite.jpg" alt="Lash and Brow Studio Private Luxury Treatment Suite" class="img-fluid" width="1200" height="900" loading="eager">
+                </div>
+
+                <!-- Floating Credential Badge -->
+                <div class="subpage-hero-badge">
+                  <div class="subpage-hero-badge-icon">
+                    <i class="bi bi-patch-check"></i>
+                  </div>
+                  <div>
+                    <div class="subpage-hero-badge-title">3-Day Retention Guarantee</div>
+                    <div class="subpage-hero-badge-subtitle">Complimentary 30-min touch-up fix</div>
+                  </div>
                 </div>
               </div>
-              <p class="text-muted-custom small mb-0">
-                If you experience abnormal fallout within the first 72 hours, we will welcome you back for a complimentary 30-minute retention fix.
-              </p>
             </div>
           </div>
         </div>
@@ -307,7 +344,7 @@
                 </div>
                 <div class="pricing-item-meta">
                   <span class="pricing-item-price">₹65</span>
-                  <a href="contact.html?service=Classic%20Lash%20Extensions" class="btn-luxury btn-luxury-outline btn-luxury-sm">Book</a>
+                  <a href="contact.html?service=Classic%20Lash%20Extensions" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
                 </div>
               </div>
 
@@ -333,7 +370,7 @@
                 </div>
                 <div class="pricing-item-meta">
                   <span class="pricing-item-price">₹75</span>
-                  <a href="contact.html?service=Hybrid%20Lash%20Extensions" class="btn-luxury btn-luxury-outline btn-luxury-sm">Book</a>
+                  <a href="contact.html?service=Hybrid%20Lash%20Extensions" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
                 </div>
               </div>
 
@@ -359,7 +396,7 @@
                 </div>
                 <div class="pricing-item-meta">
                   <span class="pricing-item-price">₹85</span>
-                  <a href="contact.html?service=Volume%20Lash%20Extensions" class="btn-luxury btn-luxury-outline btn-luxury-sm">Book</a>
+                  <a href="contact.html?service=Volume%20Lash%20Extensions" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
                 </div>
               </div>
 
@@ -385,7 +422,7 @@
                 </div>
                 <div class="pricing-item-meta">
                   <span class="pricing-item-price">₹95</span>
-                  <a href="contact.html?service=Wispy%20Lash%20Extensions" class="btn-luxury btn-luxury-outline btn-luxury-sm">Book</a>
+                  <a href="contact.html?service=Wispy%20Lash%20Extensions" class="btn-luxury btn-luxury-primary btn-luxury-sm">Book</a>
                 </div>
               </div>
             </div>
@@ -651,32 +688,82 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 7: VIP BEAUTY MEMBERSHIP CLUB
+         SECTION 7: VIP BEAUTY MEMBERSHIP CLUB (ENHANCED EDITORIAL SPLIT)
          ======================================================================== -->
     <section class="section-padding bg-ivory" aria-labelledby="membershipHeading">
       <div class="container">
-        <div class="card-luxury p-4 p-lg-5 bg-charcoal text-white">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-8">
-              <span class="eyebrow text-gold"><i class="bi bi-gem me-1"></i> STUDIO MEMBERSHIP</span>
-              <h2 id="membershipHeading" class="text-white mb-2">Join The Studio Glow Society</h2>
-              <p class="lead-luxury text-white-50 mb-3">
-                Enjoy effortless maintenance with guaranteed priority appointment slots, automatic bi-weekly refill billing, complimentary monthly lash baths, and 15% off all retail aftercare items.
-              </p>
-              <div class="d-flex flex-wrap gap-4 text-white small">
-                <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Guaranteed Weekend Slots</div>
-                <div><i class="bi bi-check-circle-fill text-gold me-1"></i> Complimentary Monthly Spa Upgrades</div>
-                <div><i class="bi bi-check-circle-fill text-gold me-1"></i> No Long-Term Contracts</div>
+        <div class="final-card-visual-wrap bg-charcoal text-white border-0 shadow-lg overflow-hidden">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Visual Sanctuary Column -->
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="position-relative h-100" style="min-height: 350px;">
+                <img src="assets/images/pricing/pricing-suite.jpg" alt="VIP Studio Glow Society Private Treatment Sanctuary" class="w-100 h-100 object-fit-cover d-block" loading="lazy" width="800" height="600">
+                <div class="final-card-img-overlay">
+                  <span class="final-card-overlay-badge"><i class="bi bi-star-fill text-dark me-1"></i> VIP Concierge Privilege</span>
+                  <h3 class="final-card-overlay-title">Private Suite Privileges</h3>
+                  <p class="final-card-overlay-desc">Guaranteed priority timeslots &bull; 15% off all retail essentials</p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <div class="mb-3">
-                <span class="display-6 font-serif text-gold">₹139</span>
-                <span class="text-white-50">/ month</span>
+
+            <!-- Right Membership Benefits Column -->
+            <div class="col-lg-7 order-lg-2 order-1">
+              <div class="p-4 p-lg-5 d-flex flex-column justify-content-center h-100">
+                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
+                  <span class="eyebrow text-gold mb-0"><i class="bi bi-gem me-1"></i> STUDIO MEMBERSHIP</span>
+                  <span class="badge badge-gold px-2 py-1 small">
+                    <i class="bi bi-check2-circle me-1"></i> Limited to 50 Members
+                  </span>
+                </div>
+                <h2 id="membershipHeading" class="text-white mb-2 font-serif">Join The Studio Glow Society</h2>
+                <div class="divider-gold mb-3"></div>
+                <p class="lead-luxury text-white-50 mb-4">
+                  Enjoy effortless, year-round maintenance with guaranteed priority appointment slots, automatic bi-weekly refill billing, complimentary monthly lash baths, and VIP studio privileges.
+                </p>
+
+                <!-- Membership Benefits Grid (2x2) -->
+                <div class="row g-3 mb-4 text-white">
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2 p-2 rounded-2" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);">
+                      <i class="bi bi-calendar2-check-fill text-gold fs-5"></i>
+                      <span class="small fw-semibold">Guaranteed Weekend Slots</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2 p-2 rounded-2" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);">
+                      <i class="bi bi-sparkles text-gold fs-5"></i>
+                      <span class="small fw-semibold">Monthly Spa Upgrades</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2 p-2 rounded-2" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);">
+                      <i class="bi bi-bag-heart-fill text-gold fs-5"></i>
+                      <span class="small fw-semibold">15% Off All Retail &amp; Serums</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="d-flex align-items-center gap-2 p-2 rounded-2" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);">
+                      <i class="bi bi-shield-lock-fill text-gold fs-5"></i>
+                      <span class="small fw-semibold">No Long-Term Contracts</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Price and CTA Action Area -->
+                <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 pt-2 border-top" style="border-color: rgba(255,255,255,0.15) !important;">
+                  <div>
+                    <div class="d-flex align-items-baseline gap-2">
+                      <span class="display-6 font-serif text-gold fw-bold">₹139</span>
+                      <span class="text-white-50 small">/ month</span>
+                      <span class="badge bg-white text-charcoal border small ms-2"><i class="bi bi-tag-fill text-gold me-1"></i> Save ₹80/Mo</span>
+                    </div>
+                    <small class="text-white-50 d-block mt-1">Automatic bi-weekly refill billing &bull; Cancel or pause anytime</small>
+                  </div>
+                  <a href="contact.html?service=Studio%20Glow%20Society%20Membership" class="btn-luxury btn-luxury-primary">
+                    Inquire About Membership <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
               </div>
-              <a href="contact.html?service=Classic%20Lash%20Extensions" class="btn-luxury btn-luxury-primary">
-                Inquire About Membership
-              </a>
             </div>
           </div>
         </div>
@@ -684,23 +771,81 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 8: PRICING CTA BANNER
+         SECTION 8: PRICING & VALUE SHOWCASE (TRANSPARENT VALUE & INCLUSIONS SUITE)
          ======================================================================== -->
-    <section class="section-padding-sm bg-blush" aria-labelledby="pricingCtaHeading">
+    <section class="final-section-luxury final-sec-pricing" aria-labelledby="pricingCtaHeading">
       <div class="container">
-        <div class="cta-banner-luxury">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-8">
-              <span class="eyebrow text-gold"><i class="bi bi-heart me-1"></i> READY TO INDULGE?</span>
-              <h2 id="pricingCtaHeading" class="display-6 text-white mb-2">Book Your Lash &amp; Brow Transformation</h2>
-              <p class="text-white-50 lead mb-0">
-                Experience bespoke artistry and long-lasting lash retention. We look forward to welcoming you into our studio.
-              </p>
+        <div class="final-card-visual-wrap">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Aftercare Visual Side -->
+            <div class="col-lg-5 order-lg-1 order-2">
+              <div class="pricing-aftercare-visual-card">
+                <img src="assets/images/services/lash-aftercare-products.jpg" alt="Luxury lash aftercare kit with foaming cleanser and cleansing brush" class="img-fluid" loading="lazy" width="800" height="600">
+                <div class="final-card-img-overlay">
+                  <span class="final-card-overlay-badge"><i class="bi bi-gift-fill text-dark me-1"></i> ₹1,500 Value Included</span>
+                  <h3 class="final-card-overlay-title">Complimentary Aftercare Kit</h3>
+                  <p class="final-card-overlay-desc">Botanical foaming bath, cleansing brush &amp; gold wand with all full sets.</p>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary btn-luxury-lg">
-                Book Your Appointment <i class="bi bi-arrow-right"></i>
-              </a>
+
+            <!-- Right Transparent Guarantee Side -->
+            <div class="col-lg-7 order-lg-2 order-1">
+              <div class="final-card-content-side">
+                <span class="eyebrow text-gold"><i class="bi bi-shield-check me-1"></i> TRANSPARENT LUXURY</span>
+                <h2 id="pricingCtaHeading" class="final-card-title">All-Inclusive Artistry. Zero Hidden Add-Ons.</h2>
+                <div class="divider-gold mb-3"></div>
+                <p class="final-card-desc mb-3">
+                  At Lash &amp; Brow Studio, our pricing is completely transparent. What you see is what you pay—never any surprise consultation fees, curl upcharges, or aftercare kit fees.
+                </p>
+
+                <!-- 3 Value Guarantee Cards with Verified Seals & Inset Imagery -->
+                <div class="pricing-guarantee-card-strip">
+                  <div class="pricing-guarantee-box">
+                    <div class="pricing-guarantee-icon"><i class="bi bi-arrow-repeat"></i></div>
+                    <div class="pricing-guarantee-content flex-grow-1">
+                      <div class="d-flex align-items-center justify-content-between flex-wrap gap-1 mb-1">
+                        <h4 class="mb-0">72-Hour Retention Assurance</h4>
+                        <span class="badge bg-white text-charcoal border small"><i class="bi bi-shield-check text-gold me-1"></i> 100% Free Touch-Up</span>
+                      </div>
+                      <p>If more than 10 extensions shed within 72 hours, enjoy an immediate complimentary priority fill guaranteed.</p>
+                    </div>
+                  </div>
+
+                  <div class="pricing-guarantee-box">
+                    <div class="pricing-guarantee-icon"><i class="bi bi-patch-check"></i></div>
+                    <div class="pricing-guarantee-content flex-grow-1">
+                      <div class="d-flex align-items-center justify-content-between flex-wrap gap-1 mb-1">
+                        <h4 class="mb-0">Medical Patch Testing Included</h4>
+                        <span class="badge bg-white text-charcoal border small"><i class="bi bi-heart-pulse text-gold me-1"></i> Sensitive Eyes Safe</span>
+                      </div>
+                      <p>Hypoallergenic medical bonding and gentle skin sensitivity patch tests provided free before any set.</p>
+                    </div>
+                  </div>
+
+                  <div class="pricing-guarantee-box">
+                    <div class="pricing-mini-thumb">
+                      <img src="assets/images/pricing/pricing-suite.jpg" alt="Luxury treatment suite heated bed" loading="lazy" width="100" height="100">
+                    </div>
+                    <div class="pricing-guarantee-content flex-grow-1">
+                      <div class="d-flex align-items-center justify-content-between flex-wrap gap-1 mb-1">
+                        <h4 class="mb-0">VIP Sanctuary Suite Comfort</h4>
+                        <span class="badge badge-gold px-2 py-0 small"><i class="bi bi-gem text-dark me-1"></i> Complimentary</span>
+                      </div>
+                      <p>Heated memory foam beds, acoustic soundproofing, and organic herbal teas or chilled champagne.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="final-card-actions">
+                  <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                    Book Your Appointment <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                  <a href="services.html" class="btn-luxury btn-luxury-secondary">
+                    Explore Service Details
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

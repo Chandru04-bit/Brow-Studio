@@ -26,6 +26,7 @@
   --color-text-secondary: #44383C;
   --color-text-muted: #776B70;
   --color-text-inverse: #FFFFFF;
+  --color-charcoal-dark: #241D20;
 
   /* Brand Accents */
   --color-dusty-rose: #C98291;
@@ -97,6 +98,7 @@
   --color-text-secondary: #E3D7DA;
   --color-text-muted: #B2A3A8;          /* High-Contrast Readable Muted */
   --color-text-inverse: #191416;
+  --color-charcoal-dark: #FAF2F2;
 
   /* Brand Accents */
   --color-dusty-rose: #D895A3;
@@ -906,7 +908,7 @@ p {
 
 .social-btn:hover {
   background-color: var(--color-dusty-rose);
-  color: var(--color-on-accent) !important;
+  color: #FFFFFF !important;
   border-color: var(--color-dusty-rose);
   transform: translateY(-3px);
 }
@@ -986,7 +988,7 @@ p {
 
 [data-theme="dark"] .social-btn:hover {
   background-color: var(--color-dusty-rose);
-  color: var(--color-on-accent) !important;
+  color: #FFFFFF !important;
   border-color: var(--color-dusty-rose);
 }
 
@@ -1025,6 +1027,7 @@ p {
 
 .back-to-top:hover {
   background-color: var(--color-dusty-rose);
+  color: #FFFFFF;
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
 }

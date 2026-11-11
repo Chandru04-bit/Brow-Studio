@@ -127,10 +127,10 @@
   <main id="mainContent">
 
     <!-- ========================================================================
-         SECTION 1: SERVICES PAGE HERO & BREADCRUMBS
+         SECTION 1: SERVICES PAGE HERO (UNIFIED LUXURY HERO)
          ======================================================================== -->
-    <section class="section-padding bg-ivory pt-5 mt-5" aria-labelledby="servicesHeroHeading">
-      <div class="container pt-3">
+    <section class="subpage-hero-luxury" aria-labelledby="servicesHeroHeading">
+      <div class="container subpage-hero-container">
         <!-- Breadcrumbs -->
         <nav aria-label="breadcrumb" class="breadcrumb-luxury">
           <ol class="breadcrumb">
@@ -139,26 +139,75 @@
           </ol>
         </nav>
 
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6 subpage-hero-content">
+            <!-- Social Proof Rating Cluster -->
+            <div class="subpage-hero-proof">
+              <div class="proof-avatar-group">
+                <img src="assets/images/testimonials/client-1.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+                <img src="assets/images/testimonials/client-2.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+                <img src="assets/images/testimonials/client-3.jpg" alt="Client" class="proof-avatar" width="24" height="24">
+              </div>
+              <div class="proof-text">
+                <span class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span>4.98 / 5 Rating (2,400+ Sets)</span>
+              </div>
+            </div>
+
             <span class="eyebrow"><i class="bi bi-stars me-1 text-gold"></i> SIGNATURE MENU</span>
-            <h1 id="servicesHeroHeading" class="mb-3">Our Lash &amp; Brow Services</h1>
+            <h1 id="servicesHeroHeading" class="subpage-hero-title">Our Lash &amp; Brow Services</h1>
             <div class="divider-gold"></div>
-            <p class="lead-luxury mb-4">
+            <p class="lead-luxury mb-2">
               Explore bespoke lash extensions, restorative keratin lash lifts, and sculpted eyebrow architecture designed to enhance your natural beauty while safeguarding lash and skin vitality.
             </p>
+
+            <!-- Trust Pills -->
+            <div class="subpage-hero-pills">
+              <span class="subpage-hero-pill"><i class="bi bi-check2-circle"></i> 1:1 Precision Isolation</span>
+              <span class="subpage-hero-pill"><i class="bi bi-droplet-half"></i> Formaldehyde-Free Adhesives</span>
+              <span class="subpage-hero-pill"><i class="bi bi-eye"></i> Custom Eye Anatomy Mapping</span>
+            </div>
+
             <div class="d-flex flex-wrap gap-3">
               <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
-                Book An Appointment <i class="bi bi-arrow-right"></i>
+                Book An Appointment <i class="bi bi-arrow-right ms-1"></i>
               </a>
-              <a href="pricing.html" class="btn-luxury btn-luxury-outline">
+              <a href="pricing.html" class="btn-luxury btn-luxury-secondary">
                 View Price Details
               </a>
             </div>
           </div>
+
           <div class="col-lg-6">
-            <div class="hero-image-card">
-              <img src="assets/images/hero/hero-treatment.jpg" alt="Artisan lash stylist performing detailed eyelash extension application" class="img-fluid" width="1200" height="900">
+            <div class="subpage-hero-visual-wrap">
+              <div class="subpage-hero-visual">
+                <!-- Decorative Gold Accent Frame -->
+                <div class="subpage-hero-frame"></div>
+
+                <!-- Secondary Floating Inset Feature Card -->
+                <div class="subpage-hero-inset-card">
+                  <div class="subpage-hero-inset-img">
+                    <img src="assets/images/services/lash-isolation-action.jpg" alt="Precision silk lash isolation" loading="eager" width="150" height="90">
+                  </div>
+                  <div class="subpage-hero-inset-caption">1:1 Silk Precision</div>
+                </div>
+
+                <!-- Main Hero Image Card -->
+                <div class="subpage-hero-image-card">
+                  <img src="assets/images/hero/hero-treatment.jpg" alt="Artisan lash stylist performing detailed eyelash extension application" class="img-fluid" width="1200" height="900" loading="eager">
+                </div>
+
+                <!-- Floating Credential Badge -->
+                <div class="subpage-hero-badge">
+                  <div class="subpage-hero-badge-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div>
+                    <div class="subpage-hero-badge-title">100% Damage-Free Artistry</div>
+                    <div class="subpage-hero-badge-subtitle">Certified Master Lash Stylists</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -685,23 +734,116 @@
     </section>
 
     <!-- ========================================================================
-         SECTION 8: SERVICE CONSULTATION CTA BANNER
+         SECTION 8: SERVICE CONSULTATION SHOWCASE (INTERACTIVE STYLE SELECTOR & BLUEPRINT)
          ======================================================================== -->
-    <section class="section-padding-sm bg-blush" aria-labelledby="consultationCtaHeading">
+    <section class="final-section-luxury final-sec-services" aria-labelledby="consultationCtaHeading">
       <div class="container">
-        <div class="cta-banner-luxury">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-8">
-              <span class="eyebrow text-gold"><i class="bi bi-chat-heart me-1"></i> PERSONALIZED GUIDANCE</span>
-              <h2 id="consultationCtaHeading" class="display-6 text-white mb-2">Unsure Which Style Complements You?</h2>
-              <p class="text-white-50 lead mb-0">
-                Our master artists are delighted to evaluate your eye shape and lifestyle in a complimentary consultation before your first set.
-              </p>
+        <div class="final-card-visual-wrap">
+          <div class="row g-0 align-items-stretch">
+            <!-- Left Signature Style Selector Column -->
+            <div class="col-lg-6 order-lg-1 order-2">
+              <div class="services-style-preview-stack">
+                <div class="d-flex align-items-center justify-content-between mb-1">
+                  <span class="eyebrow text-gold mb-0"><i class="bi bi-palette me-1"></i> SIGNATURE LOOKS</span>
+                  <small class="text-muted-custom">Curated 7mm–16mm &bull; C, CC, D, L</small>
+                </div>
+
+                <!-- Style Chip 1: Classic -->
+                <div class="services-style-chip-card">
+                  <div class="services-style-chip-thumb">
+                    <img src="assets/images/services/classic-lashes.jpg" alt="Natural classic eyelash extensions" loading="lazy" width="120" height="120">
+                  </div>
+                  <div class="services-style-chip-info">
+                    <h4>Natural Classic Sets</h4>
+                    <p>Precise 1:1 single-lash isolation delivering effortless mascara definition with zero clumping.</p>
+                  </div>
+                </div>
+
+                <!-- Style Chip 2: Russian Volume -->
+                <div class="services-style-chip-card">
+                  <div class="services-style-chip-thumb">
+                    <img src="assets/images/services/volume-lashes.jpg" alt="Russian volume full set extensions" loading="lazy" width="120" height="120">
+                  </div>
+                  <div class="services-style-chip-info">
+                    <h4>Wispy Russian Volume</h4>
+                    <p>Ultra-fine featherweight bouquets tailored for multidimensional fluff, depth, and red-carpet glam.</p>
+                  </div>
+                </div>
+
+                <!-- Style Chip 3: Brow Lamination -->
+                <div class="services-style-chip-card">
+                  <div class="services-style-chip-thumb">
+                    <img src="assets/images/services/brow-lamination.jpg" alt="Keratin sculpted brow lamination" loading="lazy" width="120" height="120">
+                  </div>
+                  <div class="services-style-chip-info">
+                    <h4>Keratin Brow Lamination</h4>
+                    <p>Feathered, perfectly brushed-up brow architecture that stays lifted and groomed for up to 8 weeks.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary btn-luxury-lg">
-                Book Consultation <i class="bi bi-arrow-right"></i>
-              </a>
+
+            <!-- Right Diagnostic Roadmap & Action Column -->
+            <div class="col-lg-6 order-lg-2 order-1">
+              <div class="final-card-content-side">
+                <span class="eyebrow text-gold"><i class="bi bi-chat-heart me-1"></i> COMPLIMENTARY DIAGNOSTIC</span>
+                <h2 id="consultationCtaHeading" class="final-card-title">Unsure Which Style Complements Your Eyes?</h2>
+                <div class="divider-gold mb-3"></div>
+                <p class="final-card-desc mb-3">
+                  Every appointment begins with our custom 15-minute diagnostic eye mapping session to assess facial symmetry and curate the ideal curl, diameter, and weight.
+                </p>
+
+                <!-- Diagnostic Visual Blueprint Card -->
+                <div class="services-diag-blueprint-card">
+                  <div class="services-diag-thumb">
+                    <img src="assets/images/services/lash-mapping-process.jpg" alt="Master lash artist performing diagnostic eye mapping procedure" loading="lazy" width="180" height="180">
+                  </div>
+                  <div>
+                    <div class="d-flex align-items-center gap-2 mb-1">
+                      <span class="badge badge-gold px-2 py-0 small"><i class="bi bi-patch-check-fill text-dark me-1"></i> 100% Free</span>
+                      <small class="text-gold fw-semibold">15-Min Mapping Session</small>
+                    </div>
+                    <h4 class="h6 mb-1 font-serif">Bespoke Eye Geometry Blueprint</h4>
+                    <small class="text-muted-custom d-block" style="font-size: 0.78rem;">
+                      Face tilt, lid fold &amp; follicle health evaluation included with every service.
+                    </small>
+                  </div>
+                </div>
+
+                <!-- 3-Step Diagnostic Roadmap -->
+                <div class="services-step-roadmap">
+                  <div class="services-step-item">
+                    <span class="services-step-num">1</span>
+                    <div class="services-step-text">
+                      <strong>Anatomy &amp; Follicle Health Check</strong>
+                      <span>Evaluating eyelid fold, tilt, and natural lash diameter to protect follicle health.</span>
+                    </div>
+                  </div>
+                  <div class="services-step-item">
+                    <span class="services-step-num">2</span>
+                    <div class="services-step-text">
+                      <strong>Curvature &amp; Length Selection</strong>
+                      <span>Choosing across C, CC, D, and L curls with lengths graduated from 7mm to 16mm.</span>
+                    </div>
+                  </div>
+                  <div class="services-step-item">
+                    <span class="services-step-num">3</span>
+                    <div class="services-step-text">
+                      <strong>Hypoallergenic Test &amp; 72-Hour Warranty</strong>
+                      <span>Medical bonding patch test with complimentary 3-day retention policy.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="final-card-actions">
+                  <a href="contact.html#bookingCard" class="btn-luxury btn-luxury-primary">
+                    Book Free Diagnostic <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                  <a href="pricing.html" class="btn-luxury btn-luxury-secondary">
+                    Explore Pricing Menu
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
