@@ -419,8 +419,18 @@
   }
 
   .atelier-feature-img-wrap {
-    min-height: 320px;
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    height: auto;
+    min-height: auto;
     margin-bottom: 2rem;
+  }
+
+  .atelier-feature-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .atelier-badge-overlay {
@@ -429,6 +439,11 @@
     right: 16px;
     max-width: calc(100% - 32px);
     padding: 0.75rem 0.95rem;
+  }
+
+  .society-black-card {
+    margin-top: 2rem;
+    padding: 1.85rem 1.5rem;
   }
 
   [dir="rtl"] .atelier-badge-overlay {
