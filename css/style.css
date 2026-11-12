@@ -227,8 +227,15 @@ p {
 .badge.bg-white.text-charcoal {
   background-color: #FFFFFF !important;
   color: #191416 !important;
-  font-weight: 600;
-  border-color: rgba(0, 0, 0, 0.14) !important;
+  font-weight: 700;
+  border-color: rgba(0, 0, 0, 0.16) !important;
+}
+
+[data-theme="dark"] .badge.bg-white,
+[data-theme="dark"] .badge.bg-white.text-charcoal {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: #FAF2F2 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
 }
 
 .eyebrow {
