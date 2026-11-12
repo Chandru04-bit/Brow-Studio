@@ -3690,18 +3690,27 @@
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: var(--color-champagne-gold-light);
-  color: var(--color-gold-text);
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
   flex-shrink: 0;
+  transition: transform var(--transition-smooth);
+}
+
+.society-privilege-card:hover .society-privilege-icon {
+  transform: scale(1.08);
+}
+
+.society-privilege-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
 }
 
 [data-theme="dark"] .society-privilege-icon {
-  background: rgba(199, 166, 106, 0.2);
-  color: var(--color-champagne-gold);
+  background: transparent;
 }
 
 .society-privilege-title {
