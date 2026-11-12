@@ -465,6 +465,10 @@
     padding: 1.85rem 1.5rem;
   }
 
+  .society-privilege-card {
+    padding: 1.25rem 1.35rem;
+  }
+
   [dir="rtl"] .atelier-badge-overlay {
     left: 16px;
     right: 16px;
@@ -897,6 +901,24 @@
 
   .society-perk-item {
     font-size: 0.88rem;
+  }
+
+  .society-privilege-card {
+    padding: 1.1rem 1.15rem;
+    gap: 1rem;
+  }
+
+  .society-privilege-title {
+    font-size: 1.05rem;
+  }
+
+  .society-privilege-desc {
+    font-size: 0.82rem;
+  }
+
+  .society-assurance-strip {
+    font-size: 0.75rem;
+    gap: 0.65rem;
   }
 
   .atelier-pillar-number {

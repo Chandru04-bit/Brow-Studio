@@ -3667,23 +3667,52 @@
   z-index: 0;
 }
 
+/* VIP Society Dual Column Architecture */
+.society-privileges-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.society-privilege-cards-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
 .society-privilege-card {
   background: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  padding: 1.35rem 1.45rem;
+  padding: 1.45rem 1.6rem;
   box-shadow: var(--shadow-sm);
   display: flex;
-  align-items: flex-start;
-  gap: 1.15rem;
+  align-items: center;
+  gap: 1.25rem;
   transition: var(--transition-smooth);
-  margin-bottom: 1rem;
+  flex: 1 1 0%;
+  margin-bottom: 0;
 }
 
 .society-privilege-card:hover {
   transform: translateY(-3px);
   border-color: var(--color-champagne-gold);
   box-shadow: var(--shadow-md);
+}
+
+.society-assurance-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin-top: 1.15rem;
+  padding-top: 0.5rem;
 }
 
 .society-privilege-icon {
@@ -3742,6 +3771,8 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
+  margin-top: 0;
 }
 
 .society-black-card::before {
