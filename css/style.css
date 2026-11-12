@@ -219,6 +219,18 @@ p {
   color: var(--color-dusty-rose-dark) !important;
 }
 
+.text-charcoal {
+  color: var(--color-charcoal, #191416) !important;
+}
+
+.badge.bg-white,
+.badge.bg-white.text-charcoal {
+  background-color: #FFFFFF !important;
+  color: #191416 !important;
+  font-weight: 600;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+}
+
 .eyebrow {
   display: inline-block;
   font-family: var(--font-sans);
