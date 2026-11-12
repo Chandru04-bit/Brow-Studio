@@ -1163,7 +1163,7 @@ p {
 
 [dir="rtl"] .hero-floating-badge {
   left: auto;
-  right: -20px;
+  right: 24px;
 }
 
 [dir="rtl"] .about-stat-item {
@@ -1175,7 +1175,7 @@ p {
 
 [dir="rtl"] .about-tag {
   left: auto;
-  right: 16px;
+  right: 14px;
 }
 
 [dir="rtl"] .artist-experience-badge {

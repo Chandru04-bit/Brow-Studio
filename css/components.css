@@ -416,7 +416,7 @@
 .hero-floating-badge {
   position: absolute;
   bottom: 24px;
-  left: -20px;
+  left: 24px;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -429,7 +429,7 @@
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: var(--transition-smooth);
-  max-width: 270px;
+  max-width: 280px;
 }
 
 [data-theme="dark"] .hero-floating-badge {
@@ -492,6 +492,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
   position: relative;
+  align-items: start;
 }
 
 .about-collage-item {
@@ -504,6 +505,7 @@
 }
 
 .about-card-img {
+  position: relative;
   background-color: var(--color-bg-card);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
@@ -534,21 +536,23 @@
 
 .about-tag {
   position: absolute;
-  bottom: 16px;
-  left: 16px;
-  background: rgba(34, 27, 30, 0.82);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  bottom: 14px;
+  left: 14px;
+  background: rgba(34, 27, 30, 0.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   color: #FFFFFF;
   font-size: 0.74rem;
   font-weight: 600;
   letter-spacing: 0.05em;
-  padding: 0.35rem 0.75rem;
+  padding: 0.38rem 0.85rem;
   border-radius: var(--radius-full);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 2;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  z-index: 3;
   display: inline-flex;
   align-items: center;
+  pointer-events: none;
 }
 
 .about-stats-grid {
